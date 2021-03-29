@@ -8,51 +8,42 @@
 
 <body class="page__body">
   <header class="page-header">
-    <h1 class="visually-hidden">Сайт городка Седона</h1>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
-        </ul>
-        <a class="main-navigation__link" href="index.html">
-          <picture>
-            <!--reserved for desktop-->
-            <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
-          </picture>
-        </a>
-        <ul class="main-navigation__list user-list">
-          <li class="user-list__item"><a href="contact.html">Форма отзыва</a></li>
-          <li class="user-list__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="page-main">
-    <article class="reasons">
-      <div class="reasons__wrapper">
-        <h2 class="reasons__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="reasons__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        <svg width="161" height="57" viewBox="0 0 161 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white" />
-        </svg>
-        <svg width="160" height="57" viewBox="0 0 160 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M351.271 23.7V0L0.550049 57H351.271H601V0L351.271 23.7Z" fill="white" />
-        </svg>
+    <div class="page-header__wrapper container">
+      <h1 class="visually-hidden">Сайт городка Седона</h1>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
+            <li class="site-list__item"><a href="contact.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          </ul>
+          <a class="main-navigation__link" href="index.html">
+            <picture>
+              <!--reserved for desktop-->
+              <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
+            </picture>
+          </a>
+        </div>
+      </nav>
+      <div class="promo">
+        <h2 class="promo__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <picture>
           <!--reserved for desktop-->
           <!--reserved for tablet-->
           <img src="img/index/back-mobile.jpg" alt="Добро пожаловать в Седону" width="320" height="389">
         </picture>
-        <svg width="159" height="37" viewBox="0 0 159 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M-225 0H159V37L-225 0Z" fill="white" />
-        </svg>
-        <svg width="161" height="37" viewBox="0 0 161 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M384 0H0V37L384 0Z" fill="white" />
-        </svg>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="reasons">
+      <h2 class="visually-hidden">Причины для посещения нашего городка</h2>
+      <div class="reasons__wrapper container">
         <section class="reasons__group group">
           <h3 class="group__header">Настоящий городок</h3>
           <p class="group__number number">— №1 —</p>
@@ -105,9 +96,9 @@
           </ul>
         </section>
       </div>
-    </article>
+    </section>
     <section class="offers">
-      <div class="offers__wrapper">
+      <div class="offers__wrapper container">
         <h2 class="offers__header">Заинтересовались?</h2>
         <p class="offers__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц
@@ -116,10 +107,9 @@
         <a class="offers__booking button" href="#">Найти гостиницу</a>
       </div>
     </section>
-
     <!--<section class="modal">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <div class="modal__wrapper">
+      <div class="modal__wrapper container">
         <form action="https://echo.htmlacademy.ru" method="GET">
           <fieldset></fieldset>
         </form>
@@ -127,15 +117,7 @@
     </section>-->
     <section class="map">
       <h2 class="visually-hidden">Расположение Седоны на карте штата Аризона</h2>
-      <div class="map__wrapper">
-        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27Z"
-            fill="white" />
-          <path
-            d="M13.5 21.8996C18.1392 21.8996 21.9 18.1388 21.9 13.4996C21.9 8.86042 18.1392 5.09961 13.5 5.09961C8.86078 5.09961 5.09998 8.86042 5.09998 13.4996C5.09998 18.1388 8.86078 21.8996 13.5 21.8996Z"
-            fill="#81B3D3" />
-        </svg>
+      <div class="map__wrapper container">
         <picture>
           <!--reserved for desktop-->
           <!--reserved for tablet-->
@@ -145,10 +127,10 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__hashtag hashtag">
-        <b class="hashtag__text">#visitSEDONA</b>
-      </div>
+    <div class="page-footer__wrapper container">
+      <p class="page-footer__hashtag hashtag">
+        <span class="hashtag__text">#visitsedona</span>
+      </p>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -168,10 +150,10 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+      </p>
     </div>
   </footer>
 </body>
