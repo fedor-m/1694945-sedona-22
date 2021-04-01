@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Фото и видео</title>
+</head>
+
+<body class="content">
+  <header class="content__header page-header">
+    <div class="page-header__wrapper container">
+      <h1 class="visually-hidden">Сайт городка Седона</h1>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item site-list__item--active"><a>Фото и видео</a></li>
+            <li class="site-list__item"><a href="contact.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          </ul>
+          <a class="main-navigation__link" href="index.html">
+            <picture>
+              <!--reserved for desktop-->
+              <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
+            </picture>
+          </a>
+        </div>
+      </nav>
+      <div class="promo">
+        <h2 class="promo__header">Фото и видео</h2>
+        <p class="promo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
+        <picture>
+          <!--reserved for desktop-->
+          <!--reserved for tablet-->
+          <img src="img/index/back-mobile.jpg" alt="Добро пожаловать в Седону" width="320" height="389">
+        </picture>
+      </div>
+    </div>
+  </header>
+  <main class="content__catalog">
+    <section class="multimedia">
+      <div class="multimedia__wrapper container">
+        <h2 class="visually-hidden">Лучшие фото и видео от туристов</h2>
+        <ul class="multimedia__photos photos">
+          <li class="photos__item">
+            <img class="photos__image" src="img/catalog/photo-1-mobile.jpg" alt="Неродные просторы" width="208"
+              height="208" />
+            <h3 class="photos__header">Неродные просторы</h3>
+            <p class="photos__author">Автор фото: Борис</p>
+            <p class="photos__likes">1350</p>
+          </li>
+          <li class="photos__item">
+            <picture>
+              <!--reserved for desktop-->
+              <!--reserved for tablet-->
+              <img class="photos__image" src="img/catalog/photo-2-mobile.jpg" alt="Местная растительность" width="208"
+                height="208" />
+            </picture>
+            <h3 class="photos__header">Местная растительность</h3>
+            <p class="photos__author">Автор фото: Сергей</p>
+            <p class="photos__likes">143</p>
+          </li>
+          <li class="photos__item">
+            <picture>
+              <!--reserved for desktop-->
+              <!--reserved for tablet-->
+              <img class="photos__image" src="img/catalog/photo-3-mobile.jpg" alt="Дорога на север" width="208"
+                height="208" />
+            </picture>
+            <h3 class="photos__header">Дорога на север</h3>
+            <p class="photos__author">Автор фото: Пётр</p>
+            <p class="photos__likes">96</p>
+          </li>
+          <li class="photos__item">
+            <picture>
+              <!--reserved for desktop-->
+              <!--reserved for tablet-->
+              <img class="photos__image" src="img/catalog/photo-4-mobile.jpg" alt="Мост Дьявола" width="208"
+                height="208" />
+            </picture>
+            <h3 class="photos__header">Мост Дьявола</h3>
+            <p class="photos__author">Автор фото: Антон</p>
+            <p class="photos__likes">254</p>
+          </li>
+        </ul>
+        <div class="multimedia__video video">
+          <h2 class="video__header">Всё ещё сомневаетесь?</h2>
+          <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+            очередной раз!</p>
+          <picture>
+            <!--reserved for desktop-->
+            <!--reserved for tablet-->
+            <img class="video__frame" src="img/catalog/video-mobile.jpg" alt="Видеопрезентация" width="320"
+              height="201" />
+          </picture>
+          <div class="video__player player">
+
+            <div class="player__controls controls">
+              <div class="controls__scale scale">
+                <div class="scale__bar" style="width: 100%;"></div>
+              </div>
+              <div class="controls__toggle" tabindex="0" style="left: 4%"></div>
+            </div>
+            <div class="video__buttons">
+              <button class="video__button video__button--repeat" type="button">Повторить показ видео</button></li>
+              <button class="video__button video__button--subtitles" type="button">Показать субтитры</button></li>
+              <button class="video__button video__button--fullscreen" type="button">Развернуть видео на полный
+                экран</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="content__footer page-footer">
+    <div class="page-footer__wrapper container">
+      <p class="page-footer__hashtag">
+        #visitsedona
+      </p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com">
+            <span>Twitter</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://facebook.com">
+            <span>Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://youtube.com">
+            <span>YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">Разработано</span>
+        <span class="copyright__logo">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
