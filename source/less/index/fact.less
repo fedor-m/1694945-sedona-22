@@ -1,0 +1,31 @@
+.fact {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--basic-grey);
+  border-bottom: 1px solid var(--basic-grey-border);
+}
+
+.fact:last-child {
+  border: none;
+}
+
+.fact__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.fact__description {
+  line-height: 21px;
+}
+
+.fact:not(:last-child) .fact__description {
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.fact:last-child .fact__description {
+  padding-left: 30px;
+  padding-right: 30px;
+}
