@@ -6,9 +6,17 @@
 
 .site-list__item {
   background-color: var(--basic-lightblue);
-  mix-blend-mode: normal;
   display: none;
   text-align: center;
+
+  &:hover {
+    background-color: var(--basic-lightblue-hover);
+  }
+
+  &:active {
+    background-color: var(--basic-active);
+    opacity: 0.3;
+  }
 }
 
 .site-list__item:not(:last-child) {
@@ -27,3 +35,15 @@
   font-weight: 700;
   line-height: 40px;
 }
+
+/*.site-list__item-link--active {
+  color: var(--basic-brown);
+
+  &:hover {
+    color: var(--basic-brown-hover);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}*/

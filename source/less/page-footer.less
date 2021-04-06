@@ -22,6 +22,19 @@
   color: var(--basic-white);
   background-color: var(--basic-lightblue);
   text-align: center;
+
+  &:hover {
+    background-color: var(--basic-lightblue-hover);
+  }
+
+  &:active {
+    background-color: var(--basic-lightblue-active);
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background-color: var(--basic-lightblue-disabled);
+  }
 }
 
 .social__link {
