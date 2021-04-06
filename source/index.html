@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="content">
@@ -16,12 +17,13 @@
         </button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
-            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
-            <li class="site-list__item"><a href="contact.html">Форма отзыва</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__item-link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="catalog.html">Фото и видео</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="contact.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
           </ul>
-          <a class="main-navigation__link" href="index.html">
+          <a class="main-navigation__link">
             <picture>
               <!--reserved for desktop-->
               <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
@@ -45,53 +47,57 @@
       <h2 class="visually-hidden">Причины для посещения нашего городка</h2>
       <div class="reasons__wrapper container">
         <section class="reasons__group group">
-          <h3 class="group__header">Настоящий городок</h3>
-          <p class="group__number number">— №1 —</p>
-          <p class="group__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="group__info info">
+            <h3 class="info__header">Настоящий городок</h3>
+            <p class="info__number number">— №1 —</p>
+            <p class="info__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
           <picture>
             <!--reserved for desktop-->
             <!--reserved for tablet-->
             <img src="img/index/photo-city-mobile.jpg" width="320" height="260" alt="Фото мотеля">
           </picture>
-          <ul class="features">
-            <li class="features__item">
-              <h4 class="features__title">Жильё</h4>
-              <p class="features__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <ul class="group__list features">
+            <li class="features__item feature">
+              <h3 class="feature-title">Жильё</h3>
+              <p class="feature-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="features__item">
-              <h4 class="features__title">Сувениры</h4>
-              <p class="features__description">Не только китайского, но и местного производства!</p>
+            <li class="features__item feature">
+              <h3 class="feature-title">Сувениры</h3>
+              <p class="feature-description">Не только китайского, но и местного производства!</p>
             </li>
-            <li class="features__item">
-              <h4 class="features__title">Еда</h4>
-              <p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <li class="features__item feature">
+              <h3 class="feature-title">Еда</h3>
+              <p class="feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
         </section>
         <section class="reasons__group group">
-          <h3 class="group__header">Там есть мост дьявола</h3>
-          <p class="group__number number">— №2 —</p>
-          <p class="group__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="group-info info">
+            <h3 class="info__header">Там есть мост дьявола</h3>
+            <p class="info__number number">— №2 —</p>
+            <p class="info__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
           <picture>
             <!--reserved for desktop-->
             <!--reserved for tablet-->
             <img src="img/index/photo-bridge-mobile.jpg" width="320" height="260" alt="Фото моста дьявола">
           </picture>
           <ul class="group__list facts">
-            <li class="facts__item">
-              <h4 class="facts__title">Небольшая площадь</h4>
-              <p class="facts__number number">— №3 —</p>
-              <p class="facts__description">Все интересные места находятся очень близко</p>
+            <li class="facts__item fact">
+              <h3 class="fact__title">Небольшая площадь</h3>
+              <p class="fact__number number">— №3 —</p>
+              <p class="fact__description">Все интересные места находятся очень близко</p>
             </li>
-            <li class="facts__item">
-              <h4 class="facts__title">Красивая дорога</h4>
-              <p class="facts__number number">— №4 —</p>
-              <p class="facts__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <li class="facts__item fact">
+              <h3 class="fact__title">Красивая дорога</h3>
+              <p class="fact__number number">— №4 —</p>
+              <p class="fact__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="facts__item">
-              <h4 class="facts__title">Мало туристов</h4>
-              <p class="facts__number number">— №5 —</p>
-              <p class="facts__description">Большинство едет в Гранд-Каньон и толпится там</p>
+            <li class="facts__item fact">
+              <h3 class="fact__title">Мало туристов</h3>
+              <p class="fact__number number">— №5 —</p>
+              <p class="fact__description">Большинство едет в Гранд-Каньон и толпится там</p>
             </li>
           </ul>
         </section>
