@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Обратная связь</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="content">
@@ -15,13 +16,15 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item "><a href="catalog.html">Фото и видео</a></li>
-            <li class="site-list__item site-list__item--active"><a>Форма отзыва</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item"><a class="main-navigation__link" href="index.html">Главная</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html">Фото и видео</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link main-navigation__link--active">Форма
+                отзыва</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="https://htmlacademy.ru">HTML
+                Academy</a></li>
           </ul>
-          <a class="main-navigation__link" href="index.html">
+          <a class="main-navigation__index" href="index.html">
             <picture>
               <!--reserved for desktop-->
               <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
@@ -30,8 +33,9 @@
         </div>
       </nav>
       <div class="promo">
-        <h2 class="promo__header">Помогите нашим отелям стать лучше!</h2>
-        <p class="promo__description">Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+        <h2 class="promo__header">Оставьте свой отзыв</h2>
+        <p class="promo__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами
+          достопримечательностях</p>
         <picture>
           <!--reserved for desktop-->
           <!--reserved for tablet-->
@@ -130,9 +134,9 @@
             <legend class="form__legend">Опишите свои эмоции:</legend>
             <textarea class="form__textarea">Опишите подробно все свои восторги</textarea>
           </fieldset>
-          <div class="form__submit">
-            <button type="submit">Отправить отзыв</button>
-            <p>* — обязательные поля</p>
+          <div class="form__submit submit">
+            <button type="submit" class="submit__button button">Отправить отзыв</button>
+            <p class="submit__required-fields">* — обязательные поля</p>
           </div>
         </form>
       </div>
