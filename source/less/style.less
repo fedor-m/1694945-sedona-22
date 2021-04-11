@@ -1,16 +1,35 @@
 //Normalize
 @import "node_modules/normalize.less/normalize.less";
+
 //Переменные
 @import "variables.less";
-//Верхняя часть
+
+//Общие стили
+@import "common.less";
+
+//Верхняя часть, общая для всех страниц
 @import "page-header.less";
-//Общие стили для основной части сайта
-@import "content.less";
-//index.html
-@import "index.less";
-//contact.html
-//@import "contact.less";
-//catalog.html
-//@import "catalog.less";
-//Нижняя часть
+@import "main-navigation.less";
+@import "promo.less";
+
+//Нижняя часть, общая для всех страниц
 @import "page-footer.less";
+@import "social.less";
+@import "copyright.less";
+
+//index.html — главная страница
+//Блоки причин
+@import "index/reasons.less";
+@import "index/info.less";
+@import "index/feature.less";
+@import "index/fact.less";
+//Блок предложений
+@import "index/offers.less";
+//Карта
+@import "index/map.less";
+
+//contact.html — форма обратной связи
+//@import "contact.less";
+
+//catalog.html — фото и видео
+//@import "catalog.less";
