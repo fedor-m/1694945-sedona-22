@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="content">
@@ -15,13 +17,21 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a>Фото и видео</a></li>
-            <li class="site-list__item"><a href="contact.html">Форма отзыва</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link main-navigation__link--active">Фото и видео</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="contact.html">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
           </ul>
-          <a class="main-navigation__link" href="index.html">
+          <a class="main-navigation__index" href="index.html">
             <picture>
               <!--reserved for desktop-->
               <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
@@ -47,8 +57,8 @@
         <h2 class="visually-hidden">Лучшие фото и видео от туристов</h2>
         <ul class="multimedia__photos photos">
           <li class="photos__item photo">
-            <img class="photo__frame" src="img/catalog/photo-1-mobile.jpg" alt="Неродные просторы" width="208"
-              height="208" />
+            <img class="photo__frame" src="img/catalog/photo-1-mobile.jpg" alt="Неродные просторы" width="280"
+              height="280" />
             <h3 class="photo__title">Неродные просторы</h3>
             <p class="photo__author">Автор фото: Борис</p>
             <p class="photo__likes">1350</p>
@@ -57,8 +67,8 @@
             <picture>
               <!--reserved for desktop-->
               <!--reserved for tablet-->
-              <img class="photo__frame" src="img/catalog/photo-2-mobile.jpg" alt="Местная растительность" width="208"
-                height="208" />
+              <img class="photo__frame" src="img/catalog/photo-2-mobile.jpg" alt="Местная растительность" width="280"
+                height="280" />
             </picture>
             <h3 class="photo__title">Местная растительность</h3>
             <p class="photo__author">Автор фото: Сергей</p>
@@ -68,8 +78,8 @@
             <picture>
               <!--reserved for desktop-->
               <!--reserved for tablet-->
-              <img class="photo__frame" src="img/catalog/photo-3-mobile.jpg" alt="Дорога на север" width="208"
-                height="208" />
+              <img class="photo__frame" src="img/catalog/photo-3-mobile.jpg" alt="Дорога на север" width="280"
+                height="280" />
             </picture>
             <h3 class="photo__title">Дорога на север</h3>
             <p class="photo__author">Автор фото: Пётр</p>
@@ -79,8 +89,8 @@
             <picture>
               <!--reserved for desktop-->
               <!--reserved for tablet-->
-              <img class="photo__frame" src="img/catalog/photo-4-mobile.jpg" alt="Мост Дьявола" width="208"
-                height="208" />
+              <img class="photo__frame" src="img/catalog/photo-4-mobile.jpg" alt="Мост Дьявола" width="280"
+                height="280" />
             </picture>
             <h3 class="photo__title">Мост Дьявола</h3>
             <p class="photo__author">Автор фото: Антон</p>
@@ -98,19 +108,22 @@
               height="201" />
           </picture>
           <div class="video__player player">
-
             <div class="player__controls controls">
-              <div class="controls__scale scale">
-                <div class="scale__bar" style="width: 100%;"></div>
+              <div class="controls__range range">
+                <div class="range__bar"></div>
               </div>
-              <div class="controls__toggle" tabindex="0" style="left: 4%"></div>
+              <div class="controls__toggle" tabindex="0" style="left: 4%;"></div>
             </div>
             <div class="video__buttons">
-              <button class="video__button video__button--repeat" type="button">Повторить показ видео</button></li>
-              <button class="video__button video__button--subtitles" type="button">Показать субтитры</button></li>
-              <button class="video__button video__button--fullscreen" type="button">Развернуть видео на полный
-                экран</button></li>
-              </ul>
+              <button class="video__button video__button--replay" type="button">
+                <span class="visually-hidden">Повторить показ видео</span>
+              </button>
+              <button class="video__button video__button--subtitles" type="button">
+                <span class="visually-hidden">Показать субтитры</span>
+              </button>
+              <button class="video__button video__button--fullscreen" type="button">
+                <span class="visually-hidden">Развернуть видео на полный экран</span>
+              </button>
             </div>
           </div>
         </div>
