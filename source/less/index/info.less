@@ -4,22 +4,23 @@
   text-align: center;
 
   @media (min-width: @mobile-width) {
-    padding: 55px 13px 39px;
+    padding: 35px 13px 39px;
   }
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width / 3;
-    padding: 40px 32px 44px;
+    width: 33.3333333333%;
+    padding: 21px 32px;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width / 3;
     padding: 47px 53px 57px;
   }
 }
 
 .group:last-child .info {
-  order: 1;
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
 }
 
 .info__header {
