@@ -1,7 +1,38 @@
 .submit {
   padding: 56px 20px 0;
+  border: none;
+
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    order: 5;
+  }
+}
+
+.submit__button {
+  @media (min-width: @mobile-width) {
+    width: 280px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
+  }
 }
 
 .submit__required-fields {
-  display: none;
+  @media (min-width: @mobile-width) and (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
