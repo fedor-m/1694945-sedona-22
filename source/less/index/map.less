@@ -3,5 +3,13 @@
 }
 
 .map__wrapper {
-  padding: 0;
+  @media (max-width: @desktop-width - 1) {
+    padding: 0;
+  }
+}
+
+.map__picture {
+  width: 100%;
+  height: 350px;
+  background-color: var(--basic-lightgrey);
 }

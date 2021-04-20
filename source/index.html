@@ -13,6 +13,12 @@
     <div class="page-header__wrapper container">
       <h1 class="visually-hidden">Сайт городка Седона</h1>
       <nav class="main-navigation">
+        <a class="main-navigation__index">
+          <picture>
+            <!--reserved for desktop-->
+            <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
+          </picture>
+        </a>
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -31,22 +37,20 @@
               <a class="main-navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
-          <a class="main-navigation__index">
-            <picture>
-              <!--reserved for desktop-->
-              <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
-            </picture>
-          </a>
         </div>
       </nav>
       <div class="promo">
-        <h2 class="promo__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        <picture>
-          <!--reserved for desktop-->
-          <!--reserved for tablet-->
-          <img src="img/index/back-mobile.jpg" alt="Добро пожаловать в Седону" width="320" height="389">
-        </picture>
+        <div class="promo__picture">
+          <picture>
+            <!--reserved for desktop-->
+            <!--reserved for tablet-->
+            <img src="img/index/back-mobile.jpg" alt="Добро пожаловать в Седону" width="100%" height="389">
+          </picture>
+        </div>
+        <div class="promo__wrapper">
+          <h2 class="promo__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
       </div>
     </div>
   </header>
@@ -55,16 +59,20 @@
       <h2 class="visually-hidden">Причины для посещения нашего городка</h2>
       <div class="reasons__wrapper container">
         <section class="reasons__group group">
-          <div class="group__info info">
-            <h3 class="info__header">Настоящий городок</h3>
-            <p class="info__number number">— №1 —</p>
-            <p class="info__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="group__wrapper">
+            <div class="group__info info">
+              <h3 class="info__header">Настоящий городок</h3>
+              <p class="info__number number">— №1 —</p>
+              <p class="info__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="group__picture">
+              <picture>
+                <!--reserved for desktop-->
+                <!--reserved for tablet-->
+                <img src="img/index/photo-city-mobile.jpg" width="100%" height="100%" alt="Фото мотеля">
+              </picture>
+            </div>
           </div>
-          <picture>
-            <!--reserved for desktop-->
-            <!--reserved for tablet-->
-            <img src="img/index/photo-city-mobile.jpg" width="320" height="260" alt="Фото мотеля">
-          </picture>
           <ul class="group__list features">
             <li class="features__item feature">
               <h4 class="feature__title">Жильё</h4>
@@ -81,16 +89,20 @@
           </ul>
         </section>
         <section class="reasons__group group">
-          <div class="group-info info">
-            <h3 class="info__header">Там есть мост дьявола</h3>
-            <p class="info__number number">— №2 —</p>
-            <p class="info__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="group__wrapper">
+            <div class="group__info info">
+              <h3 class="info__header">Там есть мост дьявола</h3>
+              <p class="info__number number">— №2 —</p>
+              <p class="info__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="group__picture">
+              <picture>
+                <!--reserved for desktop-->
+                <!--reserved for tablet-->
+                <img src="img/index/photo-bridge-mobile.jpg" width="100%" height="100%" alt=" Фото моста дьявола">
+              </picture>
+            </div>
           </div>
-          <picture>
-            <!--reserved for desktop-->
-            <!--reserved for tablet-->
-            <img src="img/index/photo-bridge-mobile.jpg" width="320" height="260" alt="Фото моста дьявола">
-          </picture>
           <ul class="group__list facts">
             <li class="facts__item fact">
               <h4 class="fact__title">Небольшая площадь</h4>
@@ -113,9 +125,11 @@
     </section>
     <section class="offers">
       <div class="offers__wrapper container">
-        <h2 class="offers__header">Заинтересовались?</h2>
-        <p class="offers__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
-          в Седоне</p>
+        <div class="offers__announcement">
+          <h2 class="offers__header">Заинтересовались?</h2>
+          <p class="offers__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+            гостиниц в Седоне</p>
+        </div>
         <a class="offers__booking button" href="#">Найти гостиницу</a>
       </div>
     </section>
@@ -130,11 +144,13 @@
     <section class="map">
       <h2 class="visually-hidden">Расположение Седоны на карте штата Аризона</h2>
       <div class="map__wrapper container">
-        <picture>
-          <!--reserved for desktop-->
-          <!--reserved for tablet-->
-          <img src="img/index/map-mobile.jpg" width="320" height="350" alt="Расположение Седоны на карте" />
-        </picture>
+        <div class="map__picture">
+          <picture>
+            <!--reserved for desktop-->
+            <!--reserved for tablet-->
+            <img src="img/index/map-mobile.jpg" width="320" height="100%" alt="Расположение Седоны на карте" />
+          </picture>
+        </div>
       </div>
     </section>
   </main>
@@ -167,5 +183,6 @@
     </div>
   </footer>
 </body>
+<script src="js/main.js"></script>
 
 </html>

@@ -53,8 +53,8 @@
 }
 
 .container {
-  min-width: 320px;
-  max-width: 1160px;
+  min-width: @mobile-width;
+  max-width: @desktop-width + 40px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -67,7 +67,7 @@
   text-transform: inherit;
   display: inline-block;
   line-height: 58px;
-  width: 280px;
+
   vertical-align: middle;
   cursor: pointer;
   font-weight: 700;
