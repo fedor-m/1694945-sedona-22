@@ -13,6 +13,12 @@
     <div class="page-header__wrapper container">
       <h1 class="visually-hidden">Сайт городка Седона</h1>
       <nav class="main-navigation">
+        <a class="main-navigation__index" href="index.html">
+          <picture>
+            <!--reserved for desktop-->
+            <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
+          </picture>
+        </a>
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -31,23 +37,21 @@
               <a class="main-navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
-          <a class="main-navigation__index" href="index.html">
-            <picture>
-              <!--reserved for desktop-->
-              <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
-            </picture>
-          </a>
         </div>
       </nav>
       <div class="promo">
-        <h2 class="promo__header">Фото и видео</h2>
-        <p class="promo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-          политике и экономике.</p>
-        <picture>
-          <!--reserved for desktop-->
-          <!--reserved for tablet-->
-          <img src="img/index/back-mobile.jpg" alt="Добро пожаловать в Седону" width="320" height="389">
-        </picture>
+        <div class="promo__picture">
+          <picture>
+            <!--reserved for desktop-->
+            <!--reserved for tablet-->
+            <img src="img/back-mobile.jpg" alt="Добро пожаловать в Седону" width="100%" height="389">
+          </picture>
+        </div>
+        <div class="promo__wrapper">
+          <h2 class="promo__header">Фото и видео</h2>
+          <p class="promo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+            политике и экономике.</p>
+        </div>
       </div>
     </div>
   </header>
@@ -57,56 +61,81 @@
         <h2 class="visually-hidden">Лучшие фото и видео от туристов</h2>
         <ul class="multimedia__photos photos">
           <li class="photos__item photo">
-            <img class="photo__frame" src="img/catalog/photo-1-mobile.jpg" alt="Неродные просторы" width="280"
-              height="280" />
-            <h3 class="photo__title">Неродные просторы</h3>
-            <p class="photo__author">Автор фото: Борис</p>
-            <p class="photo__likes">1350</p>
+            <div class="photo__picture">
+              <picture>
+                <!--reserved for desktop-->
+                <!--reserved for tablet-->
+                <img class="photo__frame" src="img/catalog/photo-1-mobile.jpg" alt="Неродные просторы" width="280"
+                  height="280" />
+              </picture>
+            </div>
+            <div class="photo__info">
+              <h3 class="photo__title">Неродные просторы</h3>
+              <p class="photo__author">Автор фото: Борис</p>
+              <p class="photo__likes">1350</p>
+            </div>
           </li>
           <li class="photos__item photo">
-            <picture>
-              <!--reserved for desktop-->
-              <!--reserved for tablet-->
-              <img class="photo__frame" src="img/catalog/photo-2-mobile.jpg" alt="Местная растительность" width="280"
-                height="280" />
-            </picture>
-            <h3 class="photo__title">Местная растительность</h3>
-            <p class="photo__author">Автор фото: Сергей</p>
-            <p class="photo__likes">143</p>
+            <div class="photo__picture">
+              <picture>
+                <!--reserved for desktop-->
+                <!--reserved for tablet-->
+                <img class="photo__frame" src="img/catalog/photo-2-mobile.jpg" alt="Местная растительность" width="280"
+                  height="280" />
+              </picture>
+            </div>
+            <div class="photo__info">
+              <h3 class="photo__title">Местная растительность</h3>
+              <p class="photo__author">Автор фото: Сергей</p>
+              <p class="photo__likes">143</p>
+            </div>
           </li>
           <li class="photos__item photo">
-            <picture>
-              <!--reserved for desktop-->
-              <!--reserved for tablet-->
-              <img class="photo__frame" src="img/catalog/photo-3-mobile.jpg" alt="Дорога на север" width="280"
-                height="280" />
-            </picture>
-            <h3 class="photo__title">Дорога на север</h3>
-            <p class="photo__author">Автор фото: Пётр</p>
-            <p class="photo__likes">96</p>
+            <div class="photo__picture">
+              <picture>
+                <!--reserved for desktop-->
+                <!--reserved for tablet-->
+                <img class="photo__frame" src="img/catalog/photo-3-mobile.jpg" alt="Дорога на север" width="280"
+                  height="280" />
+              </picture>
+            </div>
+
+            <div class="photo__info">
+              <h3 class="photo__title">Дорога на север</h3>
+              <p class="photo__author">Автор фото: Пётр</p>
+              <p class="photo__likes">96</p>
+            </div>
           </li>
           <li class="photos__item photo">
-            <picture>
-              <!--reserved for desktop-->
-              <!--reserved for tablet-->
-              <img class="photo__frame" src="img/catalog/photo-4-mobile.jpg" alt="Мост Дьявола" width="280"
-                height="280" />
-            </picture>
-            <h3 class="photo__title">Мост Дьявола</h3>
-            <p class="photo__author">Автор фото: Антон</p>
-            <p class="photo__likes">254</p>
+            <div class="photo__picture">
+              <picture>
+                <!--reserved for desktop-->
+                <!--reserved for tablet-->
+                <img class="photo__frame" src="img/catalog/photo-4-mobile.jpg" alt="Мост Дьявола" width="280"
+                  height="280" />
+              </picture>
+            </div>
+            <div class="photo__info">
+              <h3 class="photo__title">Мост Дьявола</h3>
+              <p class="photo__author">Автор фото: Антон</p>
+              <p class="photo__likes">254</p>
+            </div>
           </li>
         </ul>
         <div class="multimedia__video video">
-          <h2 class="video__header">Всё ещё сомневаетесь?</h2>
-          <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-            очередной раз!</p>
-          <picture>
-            <!--reserved for desktop-->
-            <!--reserved for tablet-->
-            <img class="video__frame" src="img/catalog/video-mobile.jpg" alt="Видеопрезентация" width="320"
-              height="201" />
-          </picture>
+          <div class="video__wrapper">
+            <h2 class="video__header">Всё ещё сомневаетесь?</h2>
+            <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+              очередной раз!</p>
+          </div>
+          <div class="video__picture">
+            <picture>
+              <!--reserved for desktop-->
+              <!--reserved for tablet-->
+              <img class="video__frame" src="img/catalog/video-tablet.jpg" alt="Видеопрезентация" width="320"
+                height="201" />
+            </picture>
+          </div>
           <div class="video__player player">
             <div class="player__controls controls">
               <div class="controls__range range">
@@ -126,6 +155,7 @@
               </button>
             </div>
           </div>
+
         </div>
       </div>
     </section>
