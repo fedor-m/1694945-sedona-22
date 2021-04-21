@@ -2,6 +2,29 @@
   text-align: center;
   padding-top: 14px;
   padding-bottom: 49px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+.video__wrapper {
+  @media (min-width: @mobile-width) {
+    padding: 0 26px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 150px;
+  }
+}
+
+.video__picture {
+  background-color: var(--basic-brown);
 }
 
 .video__header {
@@ -11,13 +34,11 @@
 }
 
 .video__description {
-  font-size: 14px;
   line-height: 24px;
-  padding: 0 26px;
 }
 
 .video__buttons {
-  background-color: var(--basic-lightgrey-input);
+  background-color: var(--basic-lightgrey-background);
   padding: 25px;
 }
 
