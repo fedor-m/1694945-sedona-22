@@ -1,5 +1,20 @@
 .reasons {
   padding-bottom: 33px;
+  position: relative;
+}
+
+.reasons::before {
+  @media (max-width: @mobile-width-only) {
+    background-repeat: no-repeat;
+    background-size: 100% 37px;
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 37px;
+    background-image: url("../img/index/promo_bottom.svg");
+    left: 0;
+    display: block;
+  }
 }
 
 .reasons__wrapper {
