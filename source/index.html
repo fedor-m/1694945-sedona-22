@@ -12,14 +12,16 @@
   <header class="content__header page-header">
     <div class="page-header__wrapper container">
       <h1 class="visually-hidden">Сайт городка Седона</h1>
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--opened">
         <a class="main-navigation__index">
           <picture>
-            <!--reserved for desktop-->
-            <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" />
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" />
+            <img class="main-navigation__logo" src="img/logo-sedona-mobile.svg" alt="Логотип городка Седона" width="102"
+              height="84" />
           </picture>
         </a>
-        <button class="main-navigation__toggle" type="button">
+        <button class="main-navigation__toggle main-navigation__toggle--no-js" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-navigation__wrapper">
@@ -40,14 +42,15 @@
         </div>
       </nav>
       <div class="promo">
+        <div class="promo__text promo__text--index"></div>
         <div class="promo__picture">
           <picture>
-            <!--reserved for desktop-->
-            <!--reserved for tablet-->
-            <img src="img/back-mobile.jpg" alt="Добро пожаловать в Седону" width="100%" height="389">
+            <source media="(min-width: 768px)" srcset="img/index/back-desktop.jpg" />
+            <img class="promo__img" src="img/index/back-mobile.jpg" alt="Добро пожаловать в Седону" width="320"
+              height="389">
           </picture>
         </div>
-        <div class="promo__wrapper">
+        <div class="promo__wrapper promo__wrapper--index">
           <h2 class="promo__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
@@ -67,22 +70,26 @@
             </div>
             <div class="group__picture">
               <picture>
-                <!--reserved for desktop-->
-                <!--reserved for tablet-->
-                <img src="img/index/photo-city-tablet.jpg" width="100%" height="100%" alt="Фото мотеля">
+                <source media="(min-width: 1200px)" srcset="img/index/photo-tavern-desktop.jpg" />
+                <source media="(min-width: 768px)" srcset="img/index/photo-tavern-tablet.jpg" />
+                <img class="group__img" src="img/index/photo-tavern-mobile.jpg" width="320" height="260"
+                  alt="Фото таверны">
               </picture>
             </div>
           </div>
           <ul class="group__list features">
             <li class="features__item feature">
+              <div class="feature__icon feature__icon--accomodation"></div>
               <h4 class="feature__title">Жильё</h4>
               <p class="feature__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="features__item feature">
+              <div class="feature__icon feature__icon--souvenirs"></div>
               <h4 class="feature__title">Сувениры</h4>
               <p class="feature__description">Не только китайского, но и местного производства!</p>
             </li>
             <li class="features__item feature">
+              <div class="feature__icon feature__icon--burger"></div>
               <h4 class="feature__title">Еда</h4>
               <p class="feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
@@ -97,9 +104,10 @@
             </div>
             <div class="group__picture">
               <picture>
-                <!--reserved for desktop-->
-                <!--reserved for tablet-->
-                <img src="img/index/photo-bridge-tablet.jpg" width="100%" height="100%" alt=" Фото моста дьявола">
+                <source media="(min-width: 1200px)" srcset="img/index/photo-bridge-desktop.jpg" />
+                <source media="(min-width: 768px)" srcset="img/index/photo-bridge-tablet.jpg" />
+                <img class="group__img" src="img/index/photo-bridge-mobile.jpg" width="320" height="260"
+                  alt="Фото моста дьявола">
               </picture>
             </div>
           </div>
@@ -133,22 +141,15 @@
         <a class="offers__booking button" href="#">Найти гостиницу</a>
       </div>
     </section>
-    <!--<section class="modal">
-      <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <div class="modal__wrapper container">
-        <form action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset></fieldset>
-        </form>
-      </div>
-    </section>-->
     <section class="map">
       <h2 class="visually-hidden">Расположение Седоны на карте штата Аризона</h2>
       <div class="map__wrapper container">
         <div class="map__picture">
           <picture>
-            <!--reserved for desktop-->
-            <!--reserved for tablet-->
-            <img src="img/index/map-tablet.jpg" width="100%" height="100%" alt="Расположение Седоны на карте" />
+            <source media="(min-width: 1200px)" srcset="img/index/map-desktop.jpg" />
+            <source media="(min-width: 768px)" srcset="img/index/map-tablet.jpg" />
+            <img class="map__img" src="img/index/map-mobile.jpg" width="320" height="350"
+              alt="Расположение Седоны на карте" />
           </picture>
         </div>
       </div>
@@ -161,24 +162,28 @@
       </p>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com">
-            <span>Twitter</span>
+          <a class="social__link" href="https://twitter.com">
+            <span class="visually-hidden">Twitter</span>
+            <span class="social__newtwork social__network--twitter"></span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://facebook.com">
-            <span>Facebook</span>
+            <span class="visually-hidden">Facebook</span>
+            <span class="social__newtwork social__network--facebook"></span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://youtube.com">
-            <span>YouTube</span>
+            <span class="visually-hidden">YouTube</span>
+            <span class="social__newtwork social__network--youtube"></span>
           </a>
         </li>
       </ul>
       <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">Разработано</span>
-        <span class="copyright__logo">HTML Academy</span>
+        <span class="visually-hidden">HTML Academy</span>
+        <span class="copyright__logo"></span>
       </a>
     </div>
   </footer>

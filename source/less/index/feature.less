@@ -1,7 +1,8 @@
 .feature {
-  @media (min-width: @mobile-width) and (max-width: @mobile-width-only) {
+  @media (min-width: @mobile-width) {
     padding-left: 70px;
     padding-right: 21px;
+    position: relative;
   }
 
   @media (min-width: @tablet-width) {
@@ -9,6 +10,8 @@
     text-align: center;
     padding-left: 36px;
     padding-right: 28px;
+    padding-top: 125px;
+    position: static;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,10 +32,71 @@
   }
 }
 
+.feature__icon {
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-width: @mobile-width) {
+
+    position: absolute;
+    left: 20px;
+    top: 17px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+}
+
+.feature__icon--accomodation {
+  background-image: url("../img/index/icon-accomodation.svg");
+
+  @media (min-width: @mobile-width) {
+    width: 39px;
+    height: 37px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 75px;
+    height: 72px;
+  }
+}
+
+.feature__icon--souvenirs {
+  background-image: url("../img/index/icon-souvenirs.svg");
+
+  @media (min-width: @mobile-width) {
+    width: 32px;
+    height: 38px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 64px;
+    height: 75px;
+  }
+}
+
+.feature__icon--burger {
+  background-image: url("../img/index/icon-burger.svg");
+
+  @media (min-width: @mobile-width) {
+    width: 40px;
+    height: 35px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 76px;
+    height: 68px;
+  }
+}
+
 .feature__title {
 
   font-weight: 700;
   line-height: 26px;
+
 
   @media (min-width: @mobile-width) {
     font-size: 18px;
