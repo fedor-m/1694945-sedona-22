@@ -15,8 +15,10 @@
       <nav class="main-navigation">
         <a class="main-navigation__index" href="index.html">
           <picture>
-            <!--reserved for desktop-->
-            <img src="img/city-of-sedona-mobile.png" alt="Логотип городка Седона" width="102" height="84" />
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" />
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" />
+            <img class="main-navigation__logo" src="img/logo-sedona-mobile.svg" alt="Логотип городка Седона" width="102"
+              height="84" />
           </picture>
         </a>
         <button class="main-navigation__toggle" type="button">
@@ -40,18 +42,19 @@
         </div>
       </nav>
       <div class="promo">
-        <div class="promo__picture">
+        <div class="promo__text promo__text--inner"></div>
+        <div class="promo__picture promo__picture--inner">
           <picture>
-            <!--reserved for desktop-->
-            <!--reserved for tablet-->
-            <img src="img/back-mobile.jpg" alt="Добро пожаловать в Седону" width="100%" height="389">
+            <source media="(min-width: 1280px)" srcset="img/catalog/back-desktop.jpg" />
+            <source media="(min-width: 768px)" srcset="img/catalog/back-tablet.jpg" />
+            <img class="promo__img promo__img--inner" src="img/catalog/back-mobile.jpg" alt="Добро пожаловать в Седону"
+              width="320" height="158">
           </picture>
         </div>
-        <div class="promo__wrapper">
-          <h2 class="promo__header">Оставьте свой отзыв</h2>
+        <div class="promo__wrapper promo__wrapper--inner">
+          <h2 class="promo__header promo__header--inner">Оставьте свой отзыв</h2>
           <p class="promo__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых
-            вами
-            достопримечательностях</p>
+            вами достопримечательностях</p>
         </div>
       </div>
     </div>
@@ -84,14 +87,14 @@
           <fieldset class="form__fieldset form__fieldset--contact-info">
             <legend class="form__legend">Контактная информация:</legend>
             <ul class="form__group" role="none">
-              <li class="form__item">
+              <li class="form__item form__item--phone">
                 <label class="form__label form__label--caption" for="phone"><span
                     class="form__span form__span--contact">Контактный </span><span
-                    class="form__span form__span--phone">Телефон:</span></label>
+                    class="form__span form__span--phone">Телефон*:</span></label>
                 <input class="form__input form__input--phone" id="phone" name="phone" type="tel" required
                   placeholder="Введите телефон" />
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--email">
                 <label class="form__label form__label--caption" for="email">Электронная почта*:</label>
                 <input class="form__input form__input--email" id="email" name="email" type="email" required
                   placeholder="Введите e-mail" />
@@ -102,20 +105,20 @@
             <legend class="form__legend">Ваше общее впечатление:</legend>
             <ul class="form__group" role="none">
               <li class="form__item">
-                <input type="radio" id="positive" class="form__input form__input--radio form__input--radio-checked"
+                <input type="radio" id="impression-positive" class="form__input form__input--radio visually-hidden"
                   name="impression" checked required value="positive" />
-                <label class="form__label form__label--check" for="positive">Скорее положительное</label>
+                <label class="form__label form__label--radio" for="impression-positive">Скорее положительное</label>
               </li>
               <li class="form__item">
-                <input type="radio" id="negative" class="form__input form__input--radio" name="impression"
-                  value="negative" />
-                <label class="form__label form__label--check" for="negative">Скорее
+                <input type="radio" id="impression-negative" class="form__input form__input--radio visually-hidden"
+                  name="impression" value="negative" />
+                <label class="form__label form__label--radio" for="impression-negative">Скорее
                   отрицательное</label>
               </li>
               <li class="form__item">
-                <input type="radio" id="questionable" class="form__input form__input--radio" name="impression"
-                  value="questionable" />
-                <label class="form__label form__label--check">Затрудняюсь ответить</label>
+                <input type="radio" id="impression-questionable" class="form__input form__input--radio visually-hidden"
+                  name="impression" value="questionable" />
+                <label class="form__label form__label--radio" for="impression-questionable">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -123,30 +126,32 @@
             <legend class="form__legend">Посещённые достопримечательности:</legend>
             <ul class="form__group" role="none">
               <li class="form__item">
-                <input type="checkbox" name="sightseeings"
-                  class="form__input form__input--checkbox form__input--checkbox-checked" value="devil's bridge"
-                  checked />
-                <label class="form__label form__label--check">Мост Дьявола</label>
+                <input type="checkbox" name="sightseeings" id="sightseeings-devil's bridge"
+                  class="form__input form__input--checkbox visually-hidden" value="devil's bridge" checked />
+                <label class="form__label form__label--checkbox" for="sightseeings-devil's bridge">Мост Дьявола</label>
               </li>
               <li class="form__item">
-                <input type="checkbox" name="sightseeings"
-                  class="form__input form__input--checkbox form__input--checkbox-checked" value="bell rock" checked />
-                <label class="form__label form__label--check">Гора-Колокол</label>
+                <input type="checkbox" name="sightseeings" id="sightseeings-bell rock"
+                  class="form__input form__input--checkbox visually-hidden" value="bell rock" checked />
+                <label class="form__label form__label--checkbox" for="sightseeings-bell rock">Гора-Колокол</label>
               </li>
               <li class="form__item">
-                <input type="checkbox" name="sightseeings"
-                  class="form__input form__input--checkbox form__input--checkbox-checked" checked />
-                <label class="form__label form__label--check" value="slide rock">Слайд-парк</label>
+                <input type="checkbox" name="sightseeings" id="sightseeings-slide rock"
+                  class="form__input form__input--checkbox visually-hidden" checked />
+                <label class="form__label form__label--checkbox" value="slide rock"
+                  for="sightseeings-slide rock">Слайд-парк</label>
               </li>
               <li class="form__item">
-                <input type="checkbox" name="sightseeings" class="form__input form__input--checkbox" />
-                <label class="form__label form__label--check" value="red rock">Красные скалы</label>
+                <input type="checkbox" name="sightseeings" id="sightseeings-red rock"
+                  class="form__input form__input--checkbox visually-hidden" />
+                <label class="form__label form__label--checkbox" value="red rock" for="sightseeings-red rock">Красные
+                  скалы</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--emotions">
             <legend class="form__legend">Опишите свои эмоции:</legend>
-            <textarea class="form__textarea">Опишите подробно все свои восторги</textarea>
+            <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
           <div class="form__submit submit">
@@ -164,24 +169,33 @@
       </p>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com">
-            <span>Twitter</span>
+          <a class="social__link" href="https://twitter.com">
+            <span class="visually-hidden">Twitter</span>
+            <span class="social__network social__network--twitter"></span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://facebook.com">
-            <span>Facebook</span>
+            <span class="visually-hidden">Facebook</span>
+            <span class="social__network social__network--facebook"></span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://youtube.com">
-            <span>YouTube</span>
+            <span class="visually-hidden">YouTube</span>
+            <span class="social__network social__network--youtube"></span>
           </a>
         </li>
       </ul>
       <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">Разработано</span>
-        <span class="copyright__logo">HTML Academy</span>
+        <span class="visually-hidden">HTML Academy</span>
+        <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+            fill="black" />
+        </svg>
       </a>
     </div>
   </footer>
