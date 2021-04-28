@@ -12,10 +12,23 @@
   width: 100%;
   height: 350px;
   background-color: var(--basic-lightgrey);
+  position: relative;
 }
 
 .map__img {
   width: 100%;
   height: 350px;
   object-fit: cover;
+}
+
+.map__picture::after {
+  background-image: url("../img/index/map-marker.svg");
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, 50%);
 }
