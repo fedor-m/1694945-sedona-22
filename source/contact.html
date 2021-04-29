@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Обратная связь</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon" />
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/favicon/152.png" type="image/png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
 </head>
 
 <body class="content">
@@ -45,10 +49,13 @@
         <div class="promo__text promo__text--inner"></div>
         <div class="promo__picture promo__picture--inner">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/catalog/back-desktop.jpg" />
-            <source media="(min-width: 768px)" srcset="img/catalog/back-tablet.jpg" />
-            <img class="promo__img promo__img--inner" src="img/catalog/back-mobile.jpg" alt="Добро пожаловать в Седону"
-              width="320" height="158">
+            <source media="(min-width: 1280px)"
+              srcset="img/catalog/back-desktop.jpg 1x, img/catalog/back-desktop@2x.jpg 2x, img/catalog/back-desktop@3x.jpg 3x" />
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/back-tablet.jpg 1x, img/catalog/back-tablet@2x.jpg 2x, img/catalog/back-tablet@3x.jpg 3x" />
+            <img class="promo__img promo__img--inner" src="img/catalog/back-mobile.jpg"
+              srcset="img/catalog/back-mobile@2x.jpg 2x, img/catalog/back-mobile@3x.jpg 3x"
+              alt="Добро пожаловать в Седону" width="320" height="158">
           </picture>
         </div>
         <div class="promo__wrapper promo__wrapper--inner">
