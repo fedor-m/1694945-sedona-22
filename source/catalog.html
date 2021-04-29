@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon" />
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/favicon/152.png" type="image/png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
 </head>
 
 <body class="content">
@@ -45,10 +49,13 @@
         <div class="promo__text promo__text--inner"></div>
         <div class="promo__picture promo__picture--inner">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/catalog/back-desktop.jpg" />
-            <source media="(min-width: 768px)" srcset="img/catalog/back-tablet.jpg" />
-            <img class="promo__img promo__img--inner" src="img/catalog/back-mobile.jpg" alt="Добро пожаловать в Седону"
-              width="320" height="158">
+            <source media="(min-width: 1280px)"
+              srcset="img/catalog/back-desktop.jpg 1x, img/catalog/back-desktop@2x.jpg 2x, img/catalog/back-desktop@3x.jpg 3x" />
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/back-tablet.jpg 1x, img/catalog/back-tablet@2x.jpg 2x, img/catalog/back-tablet@3x.jpg 3x" />
+            <img class="promo__img promo__img--inner" src="img/catalog/back-mobile.jpg"
+              srcset="img/catalog/back-mobile@2x.jpg 2x, img/catalog/back-mobile@3x.jpg 3x"
+              alt="Добро пожаловать в Седону" width="320" height="158">
           </picture>
         </div>
         <div class="promo__wrapper promo__wrapper--inner">
@@ -67,10 +74,13 @@
           <li class="photos__item photo">
             <div class="photo__picture">
               <picture>
-                <source media="(min-width: 1280px)" srcset="img/catalog/photo-1-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg" />
-                <img class="photo__frame" src="img/catalog/photo-1-mobile.jpg" alt="Неродные просторы" width="280"
-                  height="280" />
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x, img/catalog/photo-1-desktop@3x.jpg 3x" />
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x, img/catalog/photo-1-tablet@3x.jpg 3x" />
+                <img class="photo__frame" src="img/catalog/photo-1-mobile.jpg"
+                  srcset="img/catalog/photo-1-mobile@2x.jpg 2x, img/catalog/photo-1-mobile@3x.jpg 3x"
+                  alt="Неродные просторы" width="280" height="280" />
               </picture>
             </div>
             <div class="photo__info">
@@ -91,10 +101,13 @@
           <li class="photos__item photo">
             <div class="photo__picture">
               <picture>
-                <source media="(min-width: 1280px)" srcset="img/catalog/photo-2-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg" />
-                <img class="photo__frame" src="img/catalog/photo-2-mobile.jpg" alt="Местная растительность" width="280"
-                  height="280" />
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x, img/catalog/photo-2-desktop@3x.jpg 3x" />
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x, img/catalog/photo-2-tablet@3x.jpg 3x" />
+                <img class="photo__frame" src="img/catalog/photo-2-mobile.jpg"
+                  srcset="img/catalog/photo-2-mobile@2x.jpg 2x, img/catalog/photo-2-mobile@3x.jpg 3x"
+                  alt="Неродные просторы" width="280" height="280" />
               </picture>
             </div>
             <div class="photo__info">
@@ -115,10 +128,13 @@
           <li class="photos__item photo">
             <div class="photo__picture">
               <picture>
-                <source media="(min-width: 1280px)" srcset="img/catalog/photo-3-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg" />
-                <img class="photo__frame" src="img/catalog/photo-3-mobile.jpg" alt="Дорога на север" width="280"
-                  height="280" />
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x, img/catalog/photo-3-desktop@3x.jpg 3x" />
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x, img/catalog/photo-3-tablet@3x.jpg 3x" />
+                <img class="photo__frame" src="img/catalog/photo-3-mobile.jpg"
+                  srcset="img/catalog/photo-3-mobile@2x.jpg 2x, img/catalog/photo-3-mobile@3x.jpg 3x"
+                  alt="Неродные просторы" width="280" height="280" />
               </picture>
             </div>
             <div class="photo__info">
@@ -139,10 +155,13 @@
           <li class="photos__item photo">
             <div class="photo__picture">
               <picture>
-                <source media="(min-width: 1280px)" srcset="img/catalog/photo-4-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg" />
-                <img class="photo__frame" src="img/catalog/photo-4-mobile.jpg" alt="Мост Дьявола" width="280"
-                  height="280" />
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x, img/catalog/photo-4-desktop@3x.jpg 3x" />
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x, img/catalog/photo-4-tablet@3x.jpg 3x" />
+                <img class="photo__frame" src="img/catalog/photo-4-mobile.jpg"
+                  srcset="img/catalog/photo-4-mobile@2x.jpg 2x, img/catalog/photo-4-mobile@3x.jpg 3x"
+                  alt="Неродные просторы" width="280" height="280" />
               </picture>
             </div>
             <div class="photo__info">
@@ -170,10 +189,13 @@
           <div class="video__player player">
             <div class="player__picture">
               <picture>
-                <source media="(min-width: 1280px)" srcset="img/catalog/video-desktop.jpg" />
-                <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg" />
-                <img class="player__frame" src="img/catalog/video-mobile.jpg" alt="Видеопрезентация" width="320"
-                  height="201" />
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x, img/catalog/video-desktop@3x.jpg 3x" />
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x, img/catalog/video-tablet@3x.jpg 3x" />
+                <img class="player__frame" src="img/catalog/video-mobile.jpg"
+                  srcset="img/catalog/video-mobile@2x.jpg 2x, img/catalog/video-mobile@3x.jpg 3x" alt="Видеопрезентация"
+                  width="320" height="201" />
               </picture>
             </div>
             <div class="player__controls controls">
@@ -207,9 +229,7 @@
                 </button>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
