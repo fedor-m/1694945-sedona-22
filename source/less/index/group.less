@@ -4,12 +4,32 @@
   }
 }
 
+.group:first-of-type .info {
+  @media (min-width: @mobile-width) {
+    padding: 71px 13px 39px;
+  }
+}
+
+.group:last-of-type .info {
+  @media (min-width: @mobile-width) {
+    padding: 40px 13px 36px;
+  }
+}
+
 .group__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: @mobile-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .group__picture {

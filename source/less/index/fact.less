@@ -1,23 +1,17 @@
 .fact {
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
   background-color: var(--basic-grey);
-  border-bottom: 1px solid var(--basic-grey-border);
 
   @media (min-width: @mobile-width) {
-    width: 100%;
+    margin: 0 20px;
   }
 
   @media (min-width: @tablet-width) {
     width: 33.3333333333%;
-  }
-
-  :last-child {
     border: none;
   }
 
-  :not(:last-child) .fact__description {
+  /*:not(:last-child) .fact__description {
     padding-left: 42px;
     padding-right: 42px;
   }
@@ -25,6 +19,12 @@
   :last-child .fact__description {
     padding-left: 30px;
     padding-right: 30px;
+  }*/
+}
+
+.fact:not(:last-child) {
+  @media (min-width: @mobile-width) {
+    border-bottom: 1px solid var(--basic-grey-border);
   }
 }
 
@@ -35,6 +35,9 @@
 
   @media (min-width: @mobile-width) {
     font-size: 18px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 3px;
   }
 
   @media (min-width: @tablet-width) {
@@ -42,6 +45,11 @@
   }
 }
 
+.fact__number {
+  padding-bottom: 9px;
+}
+
 .fact__description {
   line-height: 21px;
+  padding: 0 11px 11px;
 }
