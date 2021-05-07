@@ -3,21 +3,6 @@
   color: var(--basic-white);
   text-align: center;
   margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    width: 33.3333333333%;
-    padding: 21px 32px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 47px 53px 57px;
-  }
-}
-
-.group:last-child .info {
-  @media (min-width: @tablet-width) {
-    order: 1;
-  }
 }
 
 .info__header {
@@ -47,4 +32,9 @@
   margin-bottom: 0;
   line-height: 21px;
   padding-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 28px;
+  }
 }
+

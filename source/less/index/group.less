@@ -4,15 +4,36 @@
   }
 }
 
-.group:first-of-type .info {
+.group:first-child .info {
   @media (min-width: @mobile-width) {
     padding: 71px 13px 39px;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 33.3333333333%;
+    padding: 40px 32px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 47px 53px 57px;
+  }
 }
 
-.group:last-of-type .info {
+.group:last-child .info {
   @media (min-width: @mobile-width) {
     padding: 40px 13px 36px;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    width: 33.33333333%;
+    padding: 40px 13px 36px;
+  }
+}
+
+.group:last-child .info__header {
+  @media (min-width: @tablet-width) {
+    padding: 2px 40px 5px 39px;
   }
 }
 
