@@ -1,11 +1,16 @@
 .feature {
   position: relative;
   padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     width: 33.3333333333%;
-    padding: 0;
+    padding-left: 0;
     text-align: center;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -17,7 +22,6 @@
     height: 37px;
     background-size: 39px 37px;
     left: 21px;
-    top: -10px;
   }
 
   @media (min-width: @tablet-width) {
@@ -35,7 +39,6 @@
     height: 38px;
     background-size: 32px 38px;
     left: 25px;
-    top: -11px;
   }
 
   @media (min-width: @tablet-width) {
@@ -53,7 +56,6 @@
     height: 35px;
     background-size: 40px 35px;
     left: 18px;
-    top: -6px;
   }
 
   @media (min-width: @tablet-width) {
@@ -81,7 +83,7 @@
   }
 }
 
-.feature:first-of-type {
+.feature:first-of-type .feature__description {
   @media (min-width: @tablet-width) {
     padding: 0 36px;
   }
@@ -90,9 +92,15 @@
 .feature:nth-last-of-type(2) {
   @media (min-width: @tablet-width) {
     order: 1;
+  }
+}
+
+.feature:nth-last-of-type(2) .feature__description {
+  @media (min-width: @tablet-width) {
     padding: 0 32px;
   }
 }
+
 
 .feature:last-of-type {
   @media (min-width: @tablet-width) {
@@ -101,7 +109,6 @@
 }
 
 .feature__title {
-
   font-weight: 700;
   line-height: 26px;
   margin: 0;
@@ -113,20 +120,16 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-    padding-top: 89px;
-    padding-bottom: 23px;
+    padding-top: 97px;
+    padding-bottom: 24px;
   }
+}
+
+.feature:nth-last-of-type(2) .feature__title {
+  padding-bottom: 2px;
 }
 
 .feature__description {
   margin: 0;
   line-height: 21px;
-
-  @media (min-width: @mobile-width) {
-    padding-bottom: 25px;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 0;
-  }
 }

@@ -2,11 +2,14 @@
   width: 280px;
   padding-top: 35px;
   padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding: 70px 0 61px;
     width: auto;
+    justify-content: center;
+    padding: 61px 0;
   }
 }
