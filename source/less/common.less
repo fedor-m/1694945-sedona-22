@@ -37,6 +37,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 .content {
@@ -47,7 +48,12 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  min-height: 100%;
+  min-height: 96%;
+
+  @media (min-width: @tablet-width) {
+    min-height: 100%;
+  }
+
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
