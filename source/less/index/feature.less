@@ -1,6 +1,6 @@
 .feature {
   position: relative;
-  padding-left: 51px;
+  padding: 0 0 0 51px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -9,10 +9,11 @@
 
   @media (min-width: @tablet-width) {
     width: 33.3333333333%;
-    padding: 0;
+    padding: 150px 0 0 0;
     text-align: center;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
 }
 
@@ -24,8 +25,8 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-    padding-top: 97px;
-    padding-bottom: 24px;
+    /*padding-top: 97px;
+    padding-bottom: 24px;*/
   }
 }
 
@@ -36,6 +37,10 @@
 
 .feature--accomodation .feature__title {
   padding: 9px 0 17px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 0 24px 0;
+  }
 }
 
 .feature--accomodation .feature__description {
@@ -47,11 +52,16 @@
 .feature--souvenirs {
   @media (min-width: @tablet-width) {
     order: 1;
+    padding: 145px 0 9px 0;
   }
 }
 
 .feature--souvenirs .feature__title {
   padding: 24px 0 17px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .feature--souvenirs .feature__description {
@@ -62,6 +72,10 @@
 
 .feature--burger .feature__title {
   padding: 25px 0 17px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 0 24px 0;
+  }
 }
 
 .feature--burger .feature__description {
@@ -82,6 +96,8 @@
   @media (min-width: @tablet-width) {
     left: 50%;
     transform: translateX(-50%);
+    width: 75px;
+    height: 75px;
   }
 }
 
@@ -90,8 +106,7 @@
   background-size: 39px 37px;
 
   @media (min-width: @tablet-width) {
-    width: 75px;
-    height: 72px;
+    top: 60px;
     background-size: 75px 72px;
   }
 }
@@ -102,8 +117,7 @@
   top: 14px;
 
   @media (min-width: @tablet-width) {
-    width: 64px;
-    height: 75px;
+    top: 60px;
     background-size: 64px 75px;
   }
 }
@@ -114,8 +128,7 @@
   top: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 76px;
-    height: 68px;
+    top: 60px;
     background-size: 76px 68px;
   }
 }
