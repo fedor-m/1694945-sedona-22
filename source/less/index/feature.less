@@ -47,6 +47,10 @@
   @media (min-width: @tablet-width) {
     padding: 0 36px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 45px 9px;
+  }
 }
 
 .feature--souvenirs {
@@ -56,17 +60,32 @@
   }
 }
 
+
 .feature--souvenirs .feature__title {
   padding: 24px 0 17px 0;
 
   @media (min-width: @tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 11px 45px 0;
+  }
 }
 
 .feature--souvenirs .feature__description {
   @media (min-width: @tablet-width) {
     padding: 0 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 32px 0;
+  }
+}
+
+.feature--souvenirs .feature__description--break {
+  @media (max-width: @desktop-width - 1) {
+    display: none;
   }
 }
 
@@ -76,11 +95,15 @@
   @media (min-width: @tablet-width) {
     padding: 8px 0 24px 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 2px 0 0;
+  }
 }
 
 .feature--burger .feature__description {
   @media (min-width: @tablet-width) {
-    padding: 0 49px;
+    padding: 0 48px;
   }
 }
 
