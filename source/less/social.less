@@ -6,10 +6,15 @@
   column-gap: 6px;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 11px;
+    padding-bottom: 6px;
+  }
 }
 
 .social__item {
-  width: 48px;
+  width: 46px;
   height: 48px;
   color: var(--basic-white);
   background-color: var(--basic-lightblue);
@@ -30,12 +35,20 @@
   }
 }
 
+.social__item:nth-child(2) {
+  width: 47px;
+}
+
 .social__link {
   text-decoration: none;
   color: var(--basic-white);
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.social__network:active {
+  opacity: 0.3;
 }
 
 .social__network--twitter {

@@ -1,5 +1,9 @@
 .map {
-  padding-bottom: 10px;
+  padding-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 28px;
+  }
 }
 
 .map__wrapper {
@@ -29,6 +33,6 @@
   content: "";
   background-repeat: no-repeat;
   left: 50%;
-  top: 43%;
+  top: 42%;
   transform: translate(-50%, 50%);
 }

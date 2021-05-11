@@ -1,112 +1,157 @@
 .feature {
-  @media (min-width: @mobile-width) {
-    padding-left: 70px;
-    padding-right: 21px;
-    position: relative;
-  }
+  position: relative;
+  padding: 0 0 0 51px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 33.3333333333%;
+    padding: 150px 0 0 0;
     text-align: center;
-    padding-left: 36px;
-    padding-right: 28px;
-    padding-top: 125px;
-    position: static;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 58px;
-    padding-right: 78px;
-  }
-}
-
-.feature:not(:last-child) {
-  @media (max-width: @mobile-width - 1) {
-    padding-bottom: 26px;
-  }
-}
-
-.feature:nth-last-child(2) {
-  @media (min-width: @tablet-width) {
-    order: 1;
-  }
-}
-
-.feature__icon {
-  background-repeat: no-repeat;
-  background-size: 100%;
-
-  @media (min-width: @mobile-width) {
-
-    position: absolute;
-    left: 20px;
-    top: 17px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-left: auto;
-    margin-right: auto;
-    position: static;
-  }
-}
-
-.feature__icon--accomodation {
-  background-image: url("../img/index/icon-accomodation.svg");
-
-  @media (min-width: @mobile-width) {
-    width: 39px;
-    height: 37px;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 75px;
-    height: 72px;
-  }
-}
-
-.feature__icon--souvenirs {
-  background-image: url("../img/index/icon-souvenirs.svg");
-
-  @media (min-width: @mobile-width) {
-    width: 32px;
-    height: 38px;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 64px;
-    height: 75px;
-  }
-}
-
-.feature__icon--burger {
-  background-image: url("../img/index/icon-burger.svg");
-
-  @media (min-width: @mobile-width) {
-    width: 40px;
-    height: 35px;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 76px;
-    height: 68px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .feature__title {
-
   font-weight: 700;
   line-height: 26px;
-
-
-  @media (min-width: @mobile-width) {
-    font-size: 18px;
-  }
+  margin: 0;
+  font-size: 18px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    /*padding-top: 97px;
+    padding-bottom: 24px;*/
   }
 }
 
 .feature__description {
+  margin: 0;
   line-height: 21px;
+}
+
+.feature--accomodation .feature__title {
+  padding: 9px 0 17px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 0 24px 0;
+  }
+}
+
+.feature--accomodation .feature__description {
+  @media (min-width: @tablet-width) {
+    padding: 0 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 45px 9px;
+  }
+}
+
+.feature--souvenirs {
+  @media (min-width: @tablet-width) {
+    order: 1;
+    padding: 145px 0 9px 0;
+  }
+}
+
+
+.feature--souvenirs .feature__title {
+  padding: 24px 0 17px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 11px 45px 0;
+  }
+}
+
+.feature--souvenirs .feature__description {
+  @media (min-width: @tablet-width) {
+    padding: 0 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 32px 0;
+  }
+}
+
+.feature--souvenirs .feature__description--break {
+  @media (max-width: @desktop-width - 1) {
+    display: none;
+  }
+}
+
+.feature--burger .feature__title {
+  padding: 25px 0 17px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 0 24px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 2px 0 0;
+  }
+}
+
+.feature--burger .feature__description {
+  @media (min-width: @tablet-width) {
+    padding: 0 48px;
+  }
+}
+
+.feature::before {
+  position: absolute;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: @tablet-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.feature--accomodation::before {
+  background-image: url("../img/index/icon-accomodation.svg");
+  background-size: 39px 37px;
+
+  @media (min-width: @tablet-width) {
+    top: 60px;
+    background-size: 75px 72px;
+  }
+}
+
+.feature--souvenirs::before {
+  background-image: url("../img/index/icon-souvenirs.svg");
+  background-size: 32px 38px;
+  top: 14px;
+
+  @media (min-width: @tablet-width) {
+    top: 60px;
+    background-size: 64px 75px;
+  }
+}
+
+.feature--burger::before {
+  background-image: url("../img/index/icon-burger.svg");
+  background-size: 40px 35px;
+  top: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 60px;
+    background-size: 76px 68px;
+  }
 }

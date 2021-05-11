@@ -1,15 +1,29 @@
-.page-footer__wrapper {
-  @media (min-width: @mobile-width) {
-    display: flex;
-    align-items: center;
-    padding: 0 78px;
-    flex-direction: column;
-  }
+.page-footer {
+  padding-bottom: 23px;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding-bottom: 36px;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 14px;
+
+  @media (min-width: @tablet-width) {
+
+    row-gap: 0;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0 61px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
     justify-content: space-around;
+    padding: 0 6px;
   }
 }
 

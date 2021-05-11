@@ -1,0 +1,18 @@
+.features {
+  width: 280px;
+  padding: 26px 0 34px 19px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    padding: 0 0 60px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 71px 0;
+  }
+}
