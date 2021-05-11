@@ -1,6 +1,10 @@
 .offers {
   text-align: center;
   padding-bottom: 51px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 58px;
+  }
 }
 
 .offers__announcement {
@@ -25,13 +29,24 @@
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
+    padding-bottom: 34px;
   }
 }
 
 .offers__description {
-  line-height: 23px;
+  line-height: 24px;
   margin: 0;
   padding-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 38px;
+  }
+}
+
+.offers__description--break {
+  @media (max-width: @tablet-width - 1) {
+    display: none;
+  }
 }
 
 .offers__booking {
