@@ -14,6 +14,7 @@
   }
 }
 
+
 .form__fieldset {
   @media (min-width: @mobile-width) and (max-width: @mobile-width-only) {
     border-top: none;
@@ -71,8 +72,8 @@
 
 .form__fieldset--contact-info {
   .form__group {
-    padding: 5px 8px 15px 8px;
-    row-gap: 3px;
+    padding: 6px 8px 19px 8px;
+    row-gap: 6px;
   }
 
   .form__item {
@@ -82,14 +83,10 @@
     position: relative;
   }
 
-  .form__item:first-child {
-    padding-bottom: 4px;
-  }
-
   .form__item::after {
     content: "";
     position: absolute;
-    top: 42px;
+    top: 40px;
     right: 0;
     width: 58px;
     height: 58px;
@@ -103,7 +100,7 @@
   }
 
   .form__label--caption {
-    padding-left: 22px;
+    padding: 4px 0 0 22px;
   }
 
   @media (min-width: @tablet-width) {
@@ -175,10 +172,8 @@
 .form__legend {
   font-size: 18px;
   font-weight: 700;
+  margin: 0 auto;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-
   padding-top: 20px;
 
   @media (min-width: @tablet-width) {
@@ -332,4 +327,16 @@
   border: none;
   padding: 13px 23px 29px 27px;
   margin: 10px auto 0;
+}
+
+.form--invalid {
+  .form__input--text:required {
+    border: 4px solid red;
+  }
+
+  .form__input--phone::after,
+  .form__input--email::after {
+    background-color: transparent;
+    border-left: none;
+  }
 }

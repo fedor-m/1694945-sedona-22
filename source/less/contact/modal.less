@@ -1,18 +1,108 @@
 .modal {
   width: 100%;
-  min-height: 280px;
+  display: none;
 
   @media (min-width: @tablet-width) {
     width: 450px;
     min-height: 347px;
   }
+  background-color: var(--basic-white);
+  position: absolute;
 }
 
 .modal__wrapper {
-  padding: 40px;
-  min-height: 347px;
+  padding: 41px 41px 60px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     padding: 42px 46px 57px;
+  }
+}
+
+.modal__header {
+  font-size: 18px;
+  padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+  line-height: 26px;
+}
+
+.modal__paragraph {
+  line-height: 24px;
+  margin: 0;
+}
+
+.modal__close {
+  margin: 0 auto;
+}
+
+.modal--error {
+  top: 1528px;
+  min-height: 280px;
+  display: block;
+
+  .modal__publication {
+    display: none;
+  }
+
+  .modal__header::after {
+    content: "Что-то пошло не так!";
+  }
+
+  .modal__paragraph--basic {
+    padding-bottom: 6px;
+  }
+
+  .modal__paragraph--basic::after {
+    content: "Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить";
+  }
+
+  .modal__paragraph--publication::after {
+    content: "";
+  }
+
+  .modal__close {
+    width: 180px;
+
+    @media (min-width: @tablet-width) {
+      width: 272px;
+    }
+  }
+
+  .modal__close::after {
+    content: "OK";
+  }
+}
+
+.modal--success {
+  top: 1852px;
+  min-height: 323px;
+  display: block;
+
+  .modal__close {
+    width: 280px;
+    font-size: 18px;
+
+    @media (min-width: @tablet-width) {
+      width: 458px;
+    }
+  }
+
+  .modal__header::after {
+    content: "Ваш отзыв отправлен!";
+  }
+
+  .modal__paragraph--basic::after {
+    content: "Спасибо за ваше участие, ваш отзыв уже поступил к нам.";
+  }
+
+  .modal__paragraph--publication::after {
+    content: "В ближайшее время мы опубликуем его на сайте.";
+  }
+
+  .modal__close::after {
+    content: "Закрыть окно";
   }
 }
