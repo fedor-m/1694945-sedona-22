@@ -2,10 +2,10 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Обратная связь</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
   <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon" />
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="img/favicon/152.png" type="image/png" />
@@ -49,25 +49,45 @@
         <div class="promo__text promo__text--inner"></div>
         <div class="promo__picture promo__picture--inner">
           <picture>
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="img/catalog/back-desktop.webp 1x, img/catalog/back-desktop@2x.webp 2x, img/catalog/back-desktop@3x.webp 3x" />
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/catalog/back-tablet.webp 1x, img/catalog/back-tablet@2x.webp 2x, img/catalog/back-tablet@3x.webp 3x" />
-            <source type="image/webp"
-              srcset="img/catalog/back-mobile.webp 1x, img/catalog/back-mobile@2x.webp 2x, img/catalog/back-mobile@3x.webp 3x" />
-            <source media="(min-width: 1280px)"
-              srcset="img/catalog/back-desktop.jpg 1x, img/catalog/back-desktop@2x.jpg 2x, img/catalog/back-desktop@3x.jpg 3x" />
-            <source media="(min-width: 768px)"
-              srcset="img/catalog/back-tablet.jpg 1x, img/catalog/back-tablet@2x.jpg 2x, img/catalog/back-tablet@3x.jpg 3x" />
-            <img class="promo__img promo__img--inner" src="img/catalog/back-mobile.jpg"
-              srcset="img/catalog/back-mobile@2x.jpg 2x, img/catalog/back-mobile@3x.jpg 3x"
-              alt="Добро пожаловать в Седону" width="320" height="158">
+            <source type="image/webp" media="(min-width: 1280px)" srcset="
+                  img/catalog/back-desktop.webp    1x,
+                  img/catalog/back-desktop@2x.webp 2x,
+                  img/catalog/back-desktop@3x.webp 3x
+                " />
+            <source type="image/webp" media="(min-width: 768px)" srcset="
+                  img/catalog/back-tablet.webp    1x,
+                  img/catalog/back-tablet@2x.webp 2x,
+                  img/catalog/back-tablet@3x.webp 3x
+                " />
+            <source type="image/webp" srcset="
+                  img/catalog/back-mobile.webp    1x,
+                  img/catalog/back-mobile@2x.webp 2x,
+                  img/catalog/back-mobile@3x.webp 3x
+                " />
+            <source media="(min-width: 1280px)" srcset="
+                  img/catalog/back-desktop.jpg    1x,
+                  img/catalog/back-desktop@2x.jpg 2x,
+                  img/catalog/back-desktop@3x.jpg 3x
+                " />
+            <source media="(min-width: 768px)" srcset="
+                  img/catalog/back-tablet.jpg    1x,
+                  img/catalog/back-tablet@2x.jpg 2x,
+                  img/catalog/back-tablet@3x.jpg 3x
+                " />
+            <img class="promo__img promo__img--inner" src="img/catalog/back-mobile.jpg" srcset="
+                  img/catalog/back-mobile@2x.jpg 2x,
+                  img/catalog/back-mobile@3x.jpg 3x
+                " alt="Добро пожаловать в Седону" width="320" height="158" />
           </picture>
         </div>
         <div class="promo__wrapper promo__wrapper--inner">
-          <h2 class="promo__header promo__header--inner">Оставьте свой отзыв</h2>
-          <p class="promo__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых
-            вами достопримечательностях</p>
+          <h2 class="promo__header promo__header--inner">
+            Оставьте свой отзыв
+          </h2>
+          <p class="promo__description">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+            посещённых вами достопримечательностях
+          </p>
         </div>
       </div>
     </div>
@@ -76,7 +96,7 @@
     <section class="contact">
       <div class="contact__wrapper container">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <form class="contact__form form" method="POST" action="https://echo.htmlacademy.ru">
+        <form class="contact__form form" method="POST" action="https://echo.htmlacademy.ru" novalidate>
           <fieldset class="form__fieldset form__fieldset--fullname">
             <legend class="form__legend">Представьтесь:</legend>
             <ul class="form__group" role="none">
@@ -125,8 +145,7 @@
               <li class="form__item">
                 <input type="radio" id="impression-negative" class="form__input form__input--radio visually-hidden"
                   name="impression" value="negative" />
-                <label class="form__label form__label--radio" for="impression-negative">Скорее
-                  отрицательное</label>
+                <label class="form__label form__label--radio" for="impression-negative">Скорее отрицательное</label>
               </li>
               <li class="form__item">
                 <input type="radio" id="impression-questionable" class="form__input form__input--radio visually-hidden"
@@ -136,7 +155,9 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--sightseeings">
-            <legend class="form__legend">Посещённые достопримечательности:</legend>
+            <legend class="form__legend">
+              Посещённые достопримечательности:
+            </legend>
             <ul class="form__group" role="none">
               <li class="form__item">
                 <input type="checkbox" name="sightseeings" id="sightseeings-devil's bridge"
@@ -150,9 +171,8 @@
               </li>
               <li class="form__item">
                 <input type="checkbox" name="sightseeings" id="sightseeings-slide rock"
-                  class="form__input form__input--checkbox visually-hidden" checked />
-                <label class="form__label form__label--checkbox" value="slide rock"
-                  for="sightseeings-slide rock">Слайд-парк</label>
+                  class="form__input form__input--checkbox visually-hidden" value="slide rock" checked />
+                <label class="form__label form__label--checkbox" for="sightseeings-slide rock">Слайд-парк</label>
               </li>
               <li class="form__item">
                 <input type="checkbox" name="sightseeings" id="sightseeings-red rock"
@@ -166,20 +186,27 @@
             <legend class="form__legend">Опишите свои эмоции:</legend>
             <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-
           <div class="form__submit submit">
-            <button type="submit" class="submit__button button">Отправить отзыв</button>
+            <button type="submit" class="submit__button button">
+              Отправить отзыв
+            </button>
             <p class="submit__required-fields">* — обязательные поля</p>
           </div>
         </form>
       </div>
     </section>
+    <section class="modal">
+      <div class="modal__wrapper container">
+        <h2 class="modal__header"></h2>
+        <p class="modal__paragraph modal__paragraph--basic"></p>
+        <p class="modal__paragraph modal__paragraph--publication"></p>
+      </div>
+      <button class="button modal__close"></button>
+    </section>
   </main>
   <footer class="content__footer page-footer">
     <div class="page-footer__wrapper container">
-      <p class="page-footer__hashtag">
-        #visitsedona
-      </p>
+      <p class="page-footer__hashtag">#visitsedona</p>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link" href="https://twitter.com">
@@ -215,5 +242,33 @@
   </footer>
 </body>
 <script src="js/main.js"></script>
+<!-- Pixel Glass -->
+<style>
+  html {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* Mobile layout by default */
+    background-image: url("img/contact/form mobile.png");
+  }
+
+  /* Tablet */
+  @media (min-width: 760px) {
+    html {
+      /* Tablet layout */
+      background-image: url("img/contact/form tablet.png");
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 960px) {
+    html {
+      /* Desktop layout */
+      background-image: url("img/contact/form desktop.png");
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 
 </html>
