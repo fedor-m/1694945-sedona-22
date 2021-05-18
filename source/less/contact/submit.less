@@ -1,5 +1,5 @@
 .submit {
-  padding: 56px 20px 0;
+  padding: 38px 20px 52px;
   border: none;
 
 
@@ -10,29 +10,29 @@
     grid-column-start: 1;
     grid-column-end: 3;
     order: 5;
+    padding: 38px 6px 89px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 38px 40px 94px 20px;
   }
 }
 
 .submit__button {
-  @media (min-width: @mobile-width) {
-    width: 280px;
-  }
+  width: 87.5%;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 324px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 480px;
+    margin: 0;
+    width: 52%;
   }
 }
 
 .submit__required-fields {
-  @media (min-width: @mobile-width) and (max-width: @mobile-width-only) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: @tablet-width) {
-    margin-left: auto;
+    margin: 5px 0 0 auto;
+    display: block;
   }
 }
