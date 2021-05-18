@@ -10,14 +10,12 @@
     grid-column-start: 1;
     grid-column-end: 3;
     order: 5;
-    padding: 38px 20px 89px;
+    padding: 38px 6px 89px 20px;
   }
 }
 
 .submit__button {
-  @media (min-width: @mobile-width) {
-    width: 280px;
-  }
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     width: 324px;
@@ -29,11 +27,9 @@
 }
 
 .submit__required-fields {
-  @media (min-width: @mobile-width) and (max-width: @mobile-width-only) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: @tablet-width) {
-    margin-left: auto;
+    margin: 5px 0 0 auto;
   }
 }

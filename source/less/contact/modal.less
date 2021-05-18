@@ -3,19 +3,20 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    width: 450px;
     min-height: 347px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   background-color: var(--basic-white);
   position: absolute;
 }
 
 .modal__wrapper {
-  padding: 41px 41px 60px;
+  padding: 41px 41px 0;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding: 42px 46px 57px;
+    padding: 42px 46px 0;
   }
 }
 
@@ -25,6 +26,8 @@
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
+    line-height: 40px;
+    padding: 0 29px;
   }
   line-height: 26px;
 }
@@ -52,7 +55,7 @@
   }
 
   .modal__paragraph--basic {
-    padding-bottom: 6px;
+    padding-bottom: 22px;
   }
 
   .modal__paragraph--basic::after {
@@ -65,10 +68,18 @@
 
   .modal__close {
     width: 180px;
+    margin-bottom: 15px;
 
     @media (min-width: @tablet-width) {
       width: 272px;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    min-height: 347px;
+    top: 1422px;
+    margin-bottom: 49px;
   }
 
   .modal__close::after {
@@ -81,12 +92,18 @@
   min-height: 323px;
   display: block;
 
+  @media (min-width: @tablet-width) {
+    top: 1248px;
+    width: 640px;
+  }
+
   .modal__close {
     width: 280px;
     font-size: 18px;
 
     @media (min-width: @tablet-width) {
       width: 458px;
+      font-size: 21px;
     }
   }
 
@@ -96,6 +113,14 @@
 
   .modal__paragraph--basic::after {
     content: "Спасибо за ваше участие, ваш отзыв уже поступил к нам.";
+  }
+
+  .modal__paragraph--publication {
+    padding-bottom: 49px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 87px;
+    }
   }
 
   .modal__paragraph--publication::after {

@@ -39,6 +39,7 @@
 }
 
 .form__fieldset {
+  border: none;
   border-bottom: 1px solid var(--basic-lightgrey);
 
   @media (min-width: @tablet-width) {
@@ -69,11 +70,13 @@
 
   .form__legend::before,
   .form__legend::after {
-    width: 123px;
-    height: 1px;
-    background-color: var(--basic-lightgrey);
-    content: "";
-    position: absolute;
+    @media (min-width: @tablet-width) {
+      width: 123px;
+      height: 1px;
+      background-color: var(--basic-lightgrey);
+      content: "";
+      position: absolute;
+    }
   }
 }
 
@@ -124,14 +127,24 @@
 }
 
 .form__fieldset--contact-info {
+  .form__legend {
+    @media (min-width: @tablet-width) {
+      padding-left: 12px;
+    }
+  }
+
   .form__legend::before {
-    top: 30px;
-    left: -177px;
+    @media (min-width: @tablet-width) {
+      top: 30px;
+      left: -152px;
+    }
   }
 
   .form__legend::after {
-    top: 30px;
-    left: 347px;
+    @media (min-width: @tablet-width) {
+      top: 30px;
+      left: 347px;
+    }
   }
 
   .form__group {
@@ -210,23 +223,29 @@
   }
 
   .form__legend {
+    padding: 16px 0 0;
+
     @media (min-width: @tablet-width) {
-      padding: 0 118px;
+      padding: 0 118px 0 132px;
     }
   }
 
   .form__legend::before {
-    top: 27px;
-    left: 8px;
+    @media (min-width: @tablet-width) {
+      top: 27px;
+      left: 8px;
+    }
   }
 
   .form__legend::after {
-    top: 27px;
-    right: -5px;
+    @media (min-width: @tablet-width) {
+      top: 27px;
+      right: -5px;
+    }
   }
 
   .form__group {
-    padding: 13px 8px 15px 7px;
+    padding: 13px 8px 16px 7px;
     row-gap: 22px;
 
     @media (min-width: @tablet-width) {
@@ -248,14 +267,24 @@
     order: 4;
   }
 
+  .from__legend {
+    @media (min-width: @tablet-width) {
+      padding-left: 12px;
+    }
+  }
+
   .form__legend::before {
-    top: 29px;
-    left: -191px;
+    @media (min-width: @tablet-width) {
+      top: 29px;
+      left: -191px;
+    }
   }
 
   .form__legend::after {
-    top: 29px;
-    left: 334px;
+    @media (min-width: @tablet-width) {
+      top: 29px;
+      left: 334px;
+    }
   }
 }
 
@@ -405,9 +434,9 @@
     border: 4px solid var(--basic-red);
   }
 
-  .form__input--phone::after,
-  .form__input--email::after {
-    background-color: transparent;
+  .form__item--phone::after,
+  .form__item--email::after {
+    border: 4px solid var(--basic-red);
     border-left: none;
   }
 }
