@@ -9,8 +9,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 0 88px 0 70px;
   }
 }
 
@@ -23,11 +22,6 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 60px;
-    padding-right: 60px;
   }
 }
 
@@ -77,6 +71,10 @@
       content: "";
       position: absolute;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 280px;
+    }
   }
 }
 
@@ -85,6 +83,10 @@
     @media (min-width: @tablet-width) {
       margin: 0 8px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 auto 0 117px;
+    }
   }
 
   .form__group {
@@ -92,7 +94,7 @@
     row-gap: 14px;
 
     @media (min-width: @tablet-width) {
-      padding: 52px 0 44px 8px;
+      padding: 52px 0 44px 41px;
       row-gap: 22px;
     }
   }
@@ -108,6 +110,10 @@
     @media (min-width: @tablet-width) {
       margin: 0 48px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 68px;
+    }
   }
 
   .form__group {
@@ -115,7 +121,11 @@
     row-gap: 20px;
 
     @media (min-width: @tablet-width) {
-      padding: 49px 0 44px 50px;
+      padding: 49px 0 44px 59px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 49px 0 44px 69px;
     }
   }
 
@@ -135,15 +145,23 @@
 
   .form__legend::before {
     @media (min-width: @tablet-width) {
-      top: 30px;
+      top: 28px;
       left: -152px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -330px;
     }
   }
 
   .form__legend::after {
     @media (min-width: @tablet-width) {
-      top: 30px;
+      top: 28px;
       left: 347px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 350px;
     }
   }
 
@@ -155,6 +173,12 @@
       padding: 10px 0 42px 8px;
       row-gap: 16px;
     }
+
+    @media (min-width: @desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      padding: 65px 0 42px 15px;
+    }
   }
 
   .form__item {
@@ -162,6 +186,31 @@
     flex-direction: column;
     row-gap: 10px;
     position: relative;
+
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+      column-gap: 16px;
+      align-items: center;
+    }
+  }
+
+  .form__item:first-of-type {
+    @media (min-width: @desktop-width) {
+      margin-right: 79px;
+    }
+  }
+
+  .form__span--contact {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  .form__label--caption[for="email"] {
+    @media (min-width: @desktop-width) {
+      white-space: nowrap;
+      padding: 3px 0 0 0;
+    }
   }
 
   .form__item::after {
@@ -190,31 +239,6 @@
     grid-column-start: 1;
     grid-column-end: 3;
   }
-
-  @media (min-width: @desktop-width) {
-    .form__group {
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
-    }
-
-    .form__item {
-      display: flex;
-      column-gap: 16px;
-      align-items: center;
-    }
-
-    .form__item:first-of-type {
-      margin-right: 79px;
-    }
-
-    .form__span--contact {
-      display: none;
-    }
-
-    .form__label--caption[for="email"] {
-      white-space: nowrap;
-    }
-  }
 }
 
 .form__fieldset--sightseeings {
@@ -228,6 +252,10 @@
     @media (min-width: @tablet-width) {
       padding: 0 118px 0 132px;
     }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 305px 0 315px;
+    }
   }
 
   .form__legend::before {
@@ -235,12 +263,20 @@
       top: 27px;
       left: 8px;
     }
+
+    @media (min-width: @desktop-width) {
+      left: 36px;
+    }
   }
 
   .form__legend::after {
     @media (min-width: @tablet-width) {
       top: 27px;
       right: -5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 26px;
     }
   }
 
@@ -257,7 +293,10 @@
 
     @media (min-width: @desktop-width) {
       display: flex;
-      justify-content: space-between;
+      flex-direction: row;
+      column-gap: 66px;
+      row-gap: 10px;
+      padding: 39px 37px 38px;
     }
   }
 }
@@ -278,12 +317,20 @@
       top: 29px;
       left: -191px;
     }
+
+    @media (min-width: @desktop-width) {
+      left: -350px;
+    }
   }
 
   .form__legend::after {
     @media (min-width: @tablet-width) {
       top: 29px;
       left: 334px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 332px;
     }
   }
 }
