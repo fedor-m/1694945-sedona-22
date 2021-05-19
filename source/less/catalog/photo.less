@@ -3,7 +3,9 @@
   padding: 23px 20px 2px;
   border-top: 1px solid var(--basic-lightgrey);
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    padding: 0 0 17px 0;
     position: relative;
   }
 }
@@ -11,13 +13,14 @@
 .photo__picture {
   background-color: var(--basic-brown);
   height: 280px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     height: 267px;
   }
 }
 
-.photo:first-of-type .photo__picture {
+.photo:first-child .photo__picture {
   @media (min-width: @tablet-width) {
     height: 400px;
   }
@@ -31,18 +34,14 @@
   }
 }
 
-.photo:first-of-type .photo__frame {
-  @media (min-width: @tablet-width) {
-    height: 400px;
-  }
-}
 
 .photo__info {
   @media (min-width: @tablet-width) {
     display: flex;
-    background-color: var(--basic-lightgrey-background);
+    /*background-color: var(--basic-lightgrey-background);*/
+    background-color: transparent;
     flex-wrap: wrap;
-    padding-left: 20px;
+    padding: 0 20px;
     width: 100%;
   }
 
@@ -61,6 +60,10 @@
   font-size: 14px;
   margin: 0;
   padding: 9px 0 0 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 0 0 0;
+  }
 }
 
 .photo__author {
@@ -72,15 +75,19 @@
   font-weight: 700;
   display: flex;
 
-
   @media (min-width: @tablet-width) {
-    margin-left: auto;
-    margin-right: 36px;
+    margin: 0;
+    position: absolute;
+    bottom: 28px;
   }
 }
 
 .photo__likes-number {
   margin-left: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 9px;
+  }
 }
 
 .photo__likes-button {
@@ -99,7 +106,7 @@
   }
 }
 
-.photo:first-of-type {
+.photo:first-child {
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -110,7 +117,25 @@
   }
 }
 
-.photo:last-of-type {
+.photo:first-child .photo__frame {
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+.photo:first-child .photo__likes {
+  right: 20px;
+}
+
+.photo:not(:first-child) .photo__likes {
+  right: 28px;
+}
+
+.photo:nth-last-child(2) .photo__likes {
+  right: 36px;
+}
+
+.photo:last-child {
   border-bottom: 1px solid var(--basic-lightgrey);
 
   @media (min-width: @tablet-width) {
