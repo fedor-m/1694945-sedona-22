@@ -94,6 +94,11 @@
     row-gap: 14px;
 
     @media (min-width: @tablet-width) {
+      padding: 52px 0 44px 8px;
+      row-gap: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
       padding: 52px 0 44px 41px;
       row-gap: 22px;
     }
@@ -121,7 +126,7 @@
     row-gap: 20px;
 
     @media (min-width: @tablet-width) {
-      padding: 49px 0 44px 59px;
+      padding: 49px 0 44px 48px;
     }
 
     @media (min-width: @desktop-width) {
@@ -145,29 +150,31 @@
 
   .form__legend::before {
     @media (min-width: @tablet-width) {
-      top: 28px;
-      left: -152px;
+      top: 30px;
+      left: -172px;
     }
 
     @media (min-width: @desktop-width) {
+      top: 28px;
       left: -330px;
     }
   }
 
   .form__legend::after {
     @media (min-width: @tablet-width) {
-      top: 28px;
-      left: 347px;
+      top: 30px;
+      left: 353px;
     }
 
     @media (min-width: @desktop-width) {
+      top: 28px;
       left: 350px;
     }
   }
 
   .form__group {
-    padding: 6px 0 19px;
-    row-gap: 6px;
+    padding: 7px 0 19px 0;
+    row-gap: 5px;
 
     @media (min-width: @tablet-width) {
       padding: 10px 0 42px 8px;
@@ -250,7 +257,7 @@
     padding: 16px 0 0;
 
     @media (min-width: @tablet-width) {
-      padding: 0 118px 0 132px;
+      padding: 0 30%;
     }
 
     @media (min-width: @desktop-width) {
@@ -306,7 +313,7 @@
     order: 4;
   }
 
-  .from__legend {
+  .form__legend {
     @media (min-width: @tablet-width) {
       padding-left: 12px;
     }

@@ -80,8 +80,8 @@
                 " alt="Добро пожаловать в Седону" width="320" height="158" />
           </picture>
         </div>
-        <div class="promo__wrapper promo__wrapper--inner">
-          <h2 class="promo__header promo__header--inner">
+        <div class="promo__wrapper promo__wrapper--contact">
+          <h2 class="promo__header promo__header--contact">
             Оставьте свой отзыв
           </h2>
           <p class="promo__description">
@@ -201,7 +201,9 @@
         <p class="modal__paragraph modal__paragraph--basic"></p>
         <p class="modal__paragraph modal__paragraph--publication"></p>
       </div>
-      <button class="button modal__close"></button>
+      <div class="modal__footer">
+        <button class="button modal__close"></button>
+      </div>
     </section>
   </main>
   <footer class="content__footer page-footer">
@@ -224,7 +226,6 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://youtube.com">
-            <span class="visually-hidden">YouTube</span>
             <svg class="social__network social__network--youtube" width="20" height="14" aria-label="YouTube">
               <use xlink:href="img/sprite-common.svg#youtube"></use>
             </svg>
@@ -233,8 +234,7 @@
       </ul>
       <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">Разработано</span>
-        <span class="visually-hidden">HTML Academy</span>
-        <svg class="copyright__logo" width="27" height="35">
+        <svg class="copyright__logo" width="27" height="35" aria-label="HTML Academy">
           <use xlink:href="img/sprite-common.svg#html-academy"></use>
         </svg>
       </a>
@@ -242,5 +242,6 @@
   </footer>
 </body>
 <script src="js/main.js"></script>
+<script src="js/form.js"></script>
 
 </html>

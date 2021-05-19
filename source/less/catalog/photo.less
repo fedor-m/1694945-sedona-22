@@ -1,29 +1,30 @@
 .photo {
   line-height: 24px;
+  padding: 23px 20px 2px;
+  border-top: 1px solid var(--basic-lightgrey);
 
-  @media (max-width: @mobile-width-only) {
-    padding: 22px 20px 0;
-    border-top: 1px solid var(--basic-lightgrey);
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    padding: 0;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
-    position: relative;
+    padding: 0;
   }
 }
 
 .photo__picture {
   background-color: var(--basic-brown);
-
-  @media (min-width: @mobile-width) {
-    height: 280px;
-  }
+  height: 280px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     height: 267px;
   }
 }
 
-.photo:first-of-type .photo__picture {
+.photo:first-child .photo__picture {
   @media (min-width: @tablet-width) {
     height: 400px;
   }
@@ -37,18 +38,13 @@
   }
 }
 
-.photo:first-of-type .photo__frame {
-  @media (min-width: @tablet-width) {
-    height: 400px;
-  }
-}
 
 .photo__info {
   @media (min-width: @tablet-width) {
     display: flex;
     background-color: var(--basic-lightgrey-background);
     flex-wrap: wrap;
-    padding-left: 20px;
+    padding: 0 20px 17px;
     width: 100%;
   }
 
@@ -58,6 +54,7 @@
     position: absolute;
     bottom: 0;
     z-index: 1;
+    padding: 16px 22px;
   }
 }
 
@@ -65,22 +62,40 @@
   width: 100%;
   font-weight: 700;
   font-size: 14px;
+  margin: 0;
+  padding: 9px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.photo__author {
+  text-transform: initial;
+  margin: 0;
 }
 
 .photo__likes {
   font-weight: 700;
   display: flex;
 
-  /*@media (min-width: @mobile-width) {}*/
-
   @media (min-width: @tablet-width) {
-    margin-left: auto;
-    margin-right: 36px;
+    margin: 0;
+    position: absolute;
+    bottom: 28px;
   }
 }
 
 .photo__likes-number {
-  margin-left: 30px;
+  margin-left: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 9px;
+  }
 }
 
 .photo__likes-button {
@@ -89,29 +104,16 @@
   width: 23px;
   height: 21px;
   cursor: pointer;
-}
+  padding: 0;
+  opacity: 0.3;
 
-.photo__likes-button path {
   @media (min-width: @desktop-width) {
     fill: var(--basic-white);
     opacity: 1;
   }
 }
 
-/*.photo__likes-button {
-  background-image: url("../img/catalog/like-icon.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  content: "";
-
-  left: 0;
-}*/
-
-.photo__author {
-  text-transform: initial;
-}
-
-.photo:first-of-type {
+.photo:first-child {
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -122,8 +124,28 @@
   }
 }
 
-.photo:last-of-type {
-  @media (max-width: @mobile-width-only) {
-    border-bottom: 1px solid var(--basic-lightgrey);
+.photo:first-child .photo__frame {
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+.photo:first-child .photo__likes {
+  right: 20px;
+}
+
+.photo:not(:first-child) .photo__likes {
+  right: 28px;
+}
+
+.photo:nth-last-child(2) .photo__likes {
+  right: 36px;
+}
+
+.photo:last-child {
+  border-bottom: 1px solid var(--basic-lightgrey);
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
   }
 }
