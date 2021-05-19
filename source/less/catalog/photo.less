@@ -5,8 +5,12 @@
 
   @media (min-width: @tablet-width) {
     border-top: none;
-    padding: 0 0 17px 0;
+    padding: 0;
     position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -38,10 +42,9 @@
 .photo__info {
   @media (min-width: @tablet-width) {
     display: flex;
-    /*background-color: var(--basic-lightgrey-background);*/
-    background-color: transparent;
+    background-color: var(--basic-lightgrey-background);
     flex-wrap: wrap;
-    padding: 0 20px;
+    padding: 0 20px 17px;
     width: 100%;
   }
 
@@ -51,6 +54,7 @@
     position: absolute;
     bottom: 0;
     z-index: 1;
+    padding: 16px 22px;
   }
 }
 
@@ -59,10 +63,14 @@
   font-weight: 700;
   font-size: 14px;
   margin: 0;
-  padding: 9px 0 0 0;
+  padding: 9px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 15px 0 0 0;
+    padding: 15px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -97,9 +105,8 @@
   height: 21px;
   cursor: pointer;
   padding: 0;
-}
+  opacity: 0.3;
 
-.photo__likes-button path {
   @media (min-width: @desktop-width) {
     fill: var(--basic-white);
     opacity: 1;
