@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon" />
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="img/favicon/152.png" type="image/png" />
@@ -17,7 +17,7 @@
     <div class="page-header__wrapper container">
       <h1 class="visually-hidden">Сайт городка Седона</h1>
       <nav class="main-navigation main-navigation--opened">
-        <a class="main-navigation__index" href="index.html">
+        <a class="main-navigation__catalog" href="catalog.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" />
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" />
@@ -31,7 +31,7 @@
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="index.html">Главная</a>
+              <a class="main-navigation__link" href="catalog.html">Главная</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link main-navigation__link--active">Фото и видео</a>
@@ -49,13 +49,35 @@
         <div class="promo__text promo__text--inner"></div>
         <div class="promo__picture promo__picture--inner">
           <picture>
-            <source media="(min-width: 1280px)"
-              srcset="img/catalog/back-desktop.jpg 1x, img/catalog/back-desktop@2x.jpg 2x, img/catalog/back-desktop@3x.jpg 3x" />
-            <source media="(min-width: 768px)"
-              srcset="img/catalog/back-tablet.jpg 1x, img/catalog/back-tablet@2x.jpg 2x, img/catalog/back-tablet@3x.jpg 3x" />
-            <img class="promo__img promo__img--inner" src="img/catalog/back-mobile.jpg"
-              srcset="img/catalog/back-mobile@2x.jpg 2x, img/catalog/back-mobile@3x.jpg 3x"
-              alt="Добро пожаловать в Седону" width="320" height="158">
+            <source type="image/webp" media="(min-width: 1280px)" srcset="
+                  img/catalog/back-desktop.webp    1x,
+                  img/catalog/back-desktop@2x.webp 2x,
+                  img/catalog/back-desktop@3x.webp 3x
+                " />
+            <source type="image/webp" media="(min-width: 768px)" srcset="
+                  img/catalog/back-tablet.webp    1x,
+                  img/catalog/back-tablet@2x.webp 2x,
+                  img/catalog/back-tablet@3x.webp 3x
+                " />
+            <source type="image/webp" srcset="
+                  img/catalog/back-mobile.webp    1x,
+                  img/catalog/back-mobile@2x.webp 2x,
+                  img/catalog/back-mobile@3x.webp 3x
+                " />
+            <source media="(min-width: 1280px)" srcset="
+                  img/catalog/back-desktop.jpg    1x,
+                  img/catalog/back-desktop@2x.jpg 2x,
+                  img/catalog/back-desktop@3x.jpg 3x
+                " />
+            <source media="(min-width: 768px)" srcset="
+                  img/catalog/back-tablet.jpg    1x,
+                  img/catalog/back-tablet@2x.jpg 2x,
+                  img/catalog/back-tablet@3x.jpg 3x
+                " />
+            <img class="promo__img promo__img--inner" src="img/catalog/back-mobile.jpg" srcset="
+                  img/catalog/back-mobile@2x.jpg 2x,
+                  img/catalog/back-mobile@3x.jpg 3x
+                " alt="Добро пожаловать в Седону" width="320" height="158" />
           </picture>
         </div>
         <div class="promo__wrapper promo__wrapper--catalog">
@@ -74,13 +96,29 @@
           <li class="photos__item photo">
             <div class="photo__picture">
               <picture>
-                <source media="(min-width: 1280px)"
-                  srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x, img/catalog/photo-1-desktop@3x.jpg 3x" />
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x, img/catalog/photo-1-tablet@3x.jpg 3x" />
-                <img class="photo__frame" src="img/catalog/photo-1-mobile.jpg"
-                  srcset="img/catalog/photo-1-mobile@2x.jpg 2x, img/catalog/photo-1-mobile@3x.jpg 3x"
-                  alt="Неродные просторы" width="280" height="280" />
+                <source type="image/webp" media="(min-width: 1280px)" srcset="
+                  img/catalog/photo-1-desktop.webp 1x,
+                  img/catalog/photo-1-desktop@2x.webp 2x,
+                  img/catalog/photo-1-desktop@3x.webp 3x" />
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                  img/catalog/photo-1-tablet.webp 1x,
+                  img/catalog/photo-1-tablet@2x.webp 2x,
+                  img/catalog/photo-1-tablet@3x.webp 3x" />
+                <source type="image/webp" srcset="
+                  img/catalog/photo-1-mobile.webp 1x,
+                  img/catalog/photo-1-mobile@2x.webp 2x,
+                  img/catalog/photo-1-mobile@3x.webp 3x" />
+                <source media="(min-width: 1280px)" srcset="
+                  img/catalog/photo-1-desktop.jpg 1x,
+                  img/catalog/photo-1-desktop@2x.jpg 2x,
+                  img/catalog/photo-1-desktop@3x.jpg 3x" />
+                <source media="(min-width: 768px)" srcset="
+                  img/catalog/photo-1-tablet.jpg 1x,
+                  img/catalog/photo-1-tablet@2x.jpg 2x,
+                  img/catalog/photo-1-tablet@3x.jpg 3x" />
+                <img class="photo__frame" src="img/catalog/photo-1-mobile.jpg" srcset="
+                  img/catalog/photo-1-mobile@2x.jpg 2x,
+                  img/catalog/photo-1-mobile@3x.jpg 3x" alt="Неродные просторы" width="280" height="280" />
               </picture>
             </div>
             <div class="photo__info">
@@ -89,7 +127,7 @@
               <p class="photo__likes">
                 <button type="button" class="photo__likes-button">
                   <svg width="23" height="21" aria-label="Число лайков">
-                    <use xlink:href="img/catalog/sprite-catalog.svg#like"></use>
+                    <use xlink:href="img/icons/sprite.svg#like"></use>
                   </svg>
                 </button>
                 <span class="photo__likes-number">1350</span>
@@ -99,13 +137,29 @@
           <li class="photos__item photo">
             <div class="photo__picture">
               <picture>
-                <source media="(min-width: 1280px)"
-                  srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x, img/catalog/photo-2-desktop@3x.jpg 3x" />
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x, img/catalog/photo-2-tablet@3x.jpg 3x" />
-                <img class="photo__frame" src="img/catalog/photo-2-mobile.jpg"
-                  srcset="img/catalog/photo-2-mobile@2x.jpg 2x, img/catalog/photo-2-mobile@3x.jpg 3x"
-                  alt="Неродные просторы" width="280" height="280" />
+                <source type="image/webp" media="(min-width: 1280px)" srcset="
+                  img/catalog/photo-2-desktop.webp 1x,
+                  img/catalog/photo-2-desktop@2x.webp 2x,
+                  img/catalog/photo-2-desktop@3x.webp 3x" />
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                  img/catalog/photo-2-tablet.webp 1x,
+                  img/catalog/photo-2-tablet@2x.webp 2x,
+                  img/catalog/photo-2-tablet@3x.webp 3x" />
+                <source type="image/webp" srcset="
+                  img/catalog/photo-2-mobile.webp 1x,
+                  img/catalog/photo-2-mobile@2x.webp 2x,
+                  img/catalog/photo-2-mobile@3x.webp 3x" />
+                <source media="(min-width: 1280px)" srcset="
+                  img/catalog/photo-2-desktop.jpg 1x,
+                  img/catalog/photo-2-desktop@2x.jpg 2x,
+                  img/catalog/photo-2-desktop@3x.jpg 3x" />
+                <source media="(min-width: 768px)" srcset="
+                  img/catalog/photo-2-tablet.jpg 1x,
+                  img/catalog/photo-2-tablet@2x.jpg 2x,
+                  img/catalog/photo-2-tablet@3x.jpg 3x" />
+                <img class="photo__frame" src="img/catalog/photo-2-mobile.jpg" srcset="
+                  img/catalog/photo-2-mobile@2x.jpg 2x,
+                  img/catalog/photo-2-mobile@3x.jpg 3x" alt="Местная растительность" width="280" height="280" />
               </picture>
             </div>
             <div class="photo__info">
@@ -114,7 +168,7 @@
               <p class="photo__likes">
                 <button type="button" class="photo__likes-button">
                   <svg width="23" height="21" aria-label="Число лайков">
-                    <use xlink:href="img/catalog/sprite-catalog.svg#like"></use>
+                    <use xlink:href="img/icons/sprite.svg#like"></use>
                   </svg>
                 </button>
                 <span class="photo__likes-number">143</span>
@@ -124,13 +178,29 @@
           <li class="photos__item photo">
             <div class="photo__picture">
               <picture>
-                <source media="(min-width: 1280px)"
-                  srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x, img/catalog/photo-3-desktop@3x.jpg 3x" />
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x, img/catalog/photo-3-tablet@3x.jpg 3x" />
+                <source type="image/webp" media="(min-width: 1280px)" srcset="
+                  img/catalog/photo-3-desktop.webp 1x,
+                  img/catalog/photo-3-desktop@2x.webp 2x,
+                  img/catalog/photo-3-desktop@3x.webp 3x" />
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                  img/catalog/photo-3-tablet.webp 1x,
+                  img/catalog/photo-3-tablet@2x.webp 2x,
+                  img/catalog/photo-3-tablet@3x.webp 3x" />
+                <source type="image/webp" srcset="
+                  img/catalog/photo-3-mobile.webp 1x,
+                  img/catalog/photo-3-mobile@2x.webp 2x,
+                  img/catalog/photo-3-mobile@3x.webp 3x" />
+                <source media="(min-width: 1280px)" srcset="
+                  img/catalog/photo-3-desktop.jpg 1x,
+                  img/catalog/photo-3-desktop@2x.jpg 2x,
+                  img/catalog/photo-3-desktop@3x.jpg 3x" />
+                <source media="(min-width: 768px)" srcset="
+                  img/catalog/photo-3-tablet.jpg 1x,
+                  img/catalog/photo-3-tablet@2x.jpg 2x,
+                  img/catalog/photo-3-tablet@3x.jpg 3x" />
                 <img class="photo__frame" src="img/catalog/photo-3-mobile.jpg"
                   srcset="img/catalog/photo-3-mobile@2x.jpg 2x, img/catalog/photo-3-mobile@3x.jpg 3x"
-                  alt="Неродные просторы" width="280" height="280" />
+                  alt="Дорога на север" width="280" height="280" />
               </picture>
             </div>
             <div class="photo__info">
@@ -139,7 +209,7 @@
               <p class="photo__likes">
                 <button type="button" class="photo__likes-button">
                   <svg width="23" height="21" aria-label="Число лайков">
-                    <use xlink:href="img/catalog/sprite-catalog.svg#like"></use>
+                    <use xlink:href="img/icons/sprite.svg#like"></use>
                   </svg>
                 </button>
                 <span class="photo__likes-number">96</span>
@@ -149,13 +219,29 @@
           <li class="photos__item photo">
             <div class="photo__picture">
               <picture>
-                <source media="(min-width: 1280px)"
-                  srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x, img/catalog/photo-4-desktop@3x.jpg 3x" />
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x, img/catalog/photo-4-tablet@3x.jpg 3x" />
-                <img class="photo__frame" src="img/catalog/photo-4-mobile.jpg"
-                  srcset="img/catalog/photo-4-mobile@2x.jpg 2x, img/catalog/photo-4-mobile@3x.jpg 3x"
-                  alt="Неродные просторы" width="280" height="280" />
+                <source type="image/webp" media="(min-width: 1280px)" srcset="
+                  img/catalog/photo-4-desktop.webp 1x,
+                  img/catalog/photo-4-desktop@2x.webp 2x,
+                  img/catalog/photo-4-desktop@3x.webp 3x" />
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                  img/catalog/photo-4-tablet.webp 1x,
+                  img/catalog/photo-4-tablet@2x.webp 2x,
+                  img/catalog/photo-4-tablet@3x.webp 3x" />
+                <source type="image/webp" srcset="
+                  img/catalog/photo-4-mobile.webp 1x,
+                  img/catalog/photo-4-mobile@2x.webp 2x,
+                  img/catalog/photo-4-mobile@3x.webp 3x" />
+                <source media="(min-width: 1280px)" srcset="
+                  img/catalog/photo-4-desktop.jpg 1x,
+                  img/catalog/photo-4-desktop@2x.jpg 2x,
+                  img/catalog/photo-4-desktop@3x.jpg 3x" />
+                <source media="(min-width: 768px)" srcset="
+                  img/catalog/photo-4-tablet.jpg 1x,
+                  img/catalog/photo-4-tablet@2x.jpg 2x,
+                  img/catalog/photo-4-tablet@3x.jpg 3x" />
+                <img class="photo__frame" src="img/catalog/photo-4-mobile.jpg" srcset="
+                  img/catalog/photo-4-mobile@2x.jpg 2x,
+                  img/catalog/photo-4-mobile@3x.jpg 3x" alt="Мост дьявола" width="280" height="280" />
               </picture>
             </div>
             <div class="photo__info">
@@ -164,7 +250,7 @@
               <p class="photo__likes">
                 <button type="button" class="photo__likes-button">
                   <svg width="23" height="21" aria-label="Число лайков">
-                    <use xlink:href="img/catalog/sprite-catalog.svg#like"></use>
+                    <use xlink:href="img/icons/sprite.svg#like"></use>
                   </svg>
                 </button>
                 <span class="photo__likes-number">254</span>
@@ -181,13 +267,17 @@
           <div class="video__player player">
             <div class="player__picture">
               <picture>
-                <source media="(min-width: 1280px)"
-                  srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x, img/catalog/video-desktop@3x.jpg 3x" />
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x, img/catalog/video-tablet@3x.jpg 3x" />
-                <img class="player__frame" src="img/catalog/video-mobile.jpg"
-                  srcset="img/catalog/video-mobile@2x.jpg 2x, img/catalog/video-mobile@3x.jpg 3x" alt="Видеопрезентация"
-                  width="320" height="201" />
+                <source media="(min-width: 1280px)" srcset="
+                  img/catalog/video-desktop.jpg 1x,
+                  img/catalog/video-desktop@2x.jpg 2x,
+                  img/catalog/video-desktop@3x.jpg 3x" />
+                <source media="(min-width: 768px)" srcset="
+                  img/catalog/video-tablet.jpg 1x,
+                  img/catalog/video-tablet@2x.jpg 2x,
+                  img/catalog/video-tablet@3x.jpg 3x" />
+                <img class="player__frame" src="img/catalog/video-mobile.jpg" srcset="
+                  img/catalog/video-mobile@2x.jpg 2x,
+                  img/catalog/video-mobile@3x.jpg 3x" alt="Видеопрезентация" width="320" height="201" />
               </picture>
             </div>
             <div class="player__controls controls">
@@ -198,18 +288,18 @@
               <div class="controls__buttons">
                 <button class="controls__button controls__button--replay" type="button">
                   <svg width="16" height="20" aria-label="Повторить показ видео">
-                    <use xlink:href="img/catalog/sprite-catalog.svg#replay"></use>
+                    <use xlink:href="img/icons/sprite.svg#replay"></use>
                   </svg>
                 </button>
                 <button class="controls__button controls__button--subtitles" type="button">
                   <span class="visually-hidden">Показать субтитры</span>
                   <svg width="32" height="20" aria-label="Показать субтитры">
-                    <use xlink:href="img/catalog/sprite-catalog.svg#subtitles"></use>
+                    <use xlink:href="img/icons/sprite.svg#subtitles"></use>
                   </svg>
                 </button>
                 <button class="controls__button controls__button--fullscreen" type="button">
                   <svg width="20" height="20" aria-label="Развернуть видео на полный экран">
-                    <use xlink:href="img/catalog/sprite-catalog.svg#fullscreen"></use>
+                    <use xlink:href="img/icons/sprite.svg#fullscreen"></use>
                   </svg>
                 </button>
               </div>
@@ -226,21 +316,21 @@
         <li class="social__item">
           <a class="social__link" href="https://twitter.com">
             <svg class="social__network social__network--twitter" width="18" height="15" aria-label="Twitter">
-              <use xlink:href="img/sprite-common.svg#twitter"></use>
+              <use xlink:href="img/icons/sprite.svg#twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://facebook.com">
             <svg class="social__network social__network--facebook" width="9" height="19" aria-label="Facebook">
-              <use xlink:href="img/sprite-common.svg#facebook"></use>
+              <use xlink:href="img/icons/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://youtube.com">
             <svg class="social__network social__network--youtube" width="20" height="14" aria-label="YouTube">
-              <use xlink:href="img/sprite-common.svg#youtube"></use>
+              <use xlink:href="img/icons/sprite.svg#youtube"></use>
             </svg>
           </a>
         </li>
@@ -249,13 +339,12 @@
         <span class="copyright__text">Разработано</span>
         <span class="visually-hidden">HTML Academy</span>
         <svg class="copyright__logo" width="27" height="35" aria-label="HTML Academy">
-          <use xlink:href="img/sprite-common.svg#html-academy"></use>
+          <use xlink:href="img/icons/sprite.svg#htmlacademy"></use>
         </svg>
       </a>
     </div>
   </footer>
 </body>
-<script src="js/main.js"></script>
-<script src="js/likes.js"></script>
+<script src="js/main.min.js"></script>
 
 </html>
