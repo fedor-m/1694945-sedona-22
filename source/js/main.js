@@ -11,14 +11,36 @@ if (existForm) {
   const form = document.querySelector('.form');
   const modal = document.querySelector('.modal');
   const modalClose = document.querySelector('.modal__close');
+  form.setAttribute("novalidate", true);
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     let valid = this.checkValidity();
-    valid ? this.classList.remove("form--invalid") : this.classList.add("form--invalid");
+    valid ? (this.classList.remove("form--invalid"), sendData(form)) : (this.classList.add("form--invalid"), setInvalid(form));
     valid ? modal.classList = "modal modal--success" : modal.classList = "modal modal--error";
     modalClose.addEventListener("click", function () {
       modal.classList = "modal";
     })
+    function setInvalid(f) {
+      const phone = f.querySelector(".form__item--phone");
+      const email = f.querySelector(".form__item--email");
+      phone.querySelector(".form__input--phone").checkValidity() ? phone.classList.remove("invalid") : phone.classList.add("invalid");
+      email.querySelector(".form__input--email").checkValidity() ? email.classList.remove("invalid") : email.classList.add("invalid");
+      phone.querySelector(".form__input--phone").addEventListener("change", function () {
+        changeStatus(this, phone);
+      });
+      email.querySelector(".form__input--email").addEventListener("change", function () {
+        changeStatus(this, email);
+      });
+    }
+    function changeStatus(input, parent) {
+      input.checkValidity() ? parent.classList.remove("invalid") : parent.classList.add("invalid");
+    }
+    function sendData(f) {
+      let formData = new FormData(f);
+      let request = new XMLHttpRequest();
+      request.open("POST", form.getAttribute("action"), true);
+      request.send(formData);
+    }
   });
 }
 if (existPhotos) {

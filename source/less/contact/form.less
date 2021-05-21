@@ -484,12 +484,12 @@
 }
 
 .form--invalid {
-  .form__input--text:required {
+  .form__input--text:required:invalid {
     border: 4px solid var(--basic-red);
   }
 
-  .form__item--phone::after,
-  .form__item--email::after {
+  .form__item--phone.invalid::after,
+  .form__item--email.invalid::after {
     border: 4px solid var(--basic-red);
     border-left: none;
   }
