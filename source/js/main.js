@@ -1,16 +1,16 @@
-const buttonNav = document.querySelector('.main-navigation__toggle');
-const nav = document.querySelector('.main-navigation');
-nav.classList.remove('main-navigation--opened');
-buttonNav.classList.remove('main-navigation__toggle--no-js');
-buttonNav.addEventListener('click', function () {
-  nav.classList.toggle('main-navigation--opened');
+const buttonNav = document.querySelector(".main-navigation__toggle");
+const nav = document.querySelector(".main-navigation");
+nav.classList.remove("main-navigation--opened");
+buttonNav.classList.remove("main-navigation__toggle--no-js");
+buttonNav.addEventListener("click", function () {
+  nav.classList.toggle("main-navigation--opened");
 });
-const existForm = document.querySelector('.form') !== null;
+const existForm = document.querySelector(".form") !== null;
 const existPhotos = document.querySelectorAll(".photo__likes-button").length > 0;
 if (existForm) {
-  const form = document.querySelector('.form');
-  const modal = document.querySelector('.modal');
-  const modalClose = document.querySelector('.modal__close');
+  const form = document.querySelector(".form");
+  const modal = document.querySelector(".modal");
+  const modalClose = document.querySelector(".modal__close");
   form.setAttribute("novalidate", true);
   form.addEventListener("submit", function (e) {
     e.preventDefault();
