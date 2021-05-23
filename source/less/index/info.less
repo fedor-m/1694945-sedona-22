@@ -38,3 +38,61 @@
     padding-top: 28px;
   }
 }
+
+.info:first-of-type {
+  @media (min-width: @mobile-width) {
+    padding: 71px 13px 39px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 33.3333333333%;
+    padding: 41px 32px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 47px 57px 57px;
+  }
+}
+
+.info:first-of-type .info__header {
+  @media (min-width: @tablet-width) {
+    padding: 0 0 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px 2px;
+  }
+}
+
+.info:last-of-type {
+  padding: 40px 13px 36px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    width: 33.33333333%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 49px 79px 0;
+  }
+}
+
+.info:last-of-type .info__header {
+  @media (min-width: @tablet-width) {
+    padding: 2px 40px 4px 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 2px 47px 4px 44px;
+  }
+}
+
+.info:last-of-type .info__description {
+  @media (min-width: @tablet-width) {
+    padding: 28px 32px 0 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 28px 10px 0;
+  }
+}
