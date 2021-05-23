@@ -1,34 +1,28 @@
 .fact {
   text-align: center;
   background-color: var(--basic-grey);
-
-  padding: 1px 31px 11px;
-
-  @media (max-width: @tablet-width - 1) {
-    position: relative;
-  }
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 33.3333333333%;
     border: none;
-    margin: 0;
-    padding: 18px 34px 28px;
+    position: static;
   }
 
-  @media (min-width: @desktop-width) {
-    padding: 18px 49px 28px;
-  }
+  /*@media (min-width: @desktop-width) {
+  }*/
+}
+
+.fact__wrapper {
+  padding: 24px 20px 0;
 }
 
 .fact__title {
-
   font-weight: 700;
   line-height: 26px;
-
   font-size: 18px;
   margin: 0 auto;
-  padding-top: 24px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -38,7 +32,7 @@
 }
 
 .fact__number {
-  padding-bottom: 9px;
+  padding-bottom: 8px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 14px;
@@ -46,14 +40,19 @@
 }
 
 .fact__description {
+  margin: 0 auto;
   line-height: 21px;
+  padding: 0 0 26px;
 }
 
-.fact:not(:first-child) .fact__description {
-  @media (min-width: @tablet-width) {
-    padding: 0 22px 0 19px;
-  }
+.fact:nth-child(2) .fact__description {
+  padding: 0 22px 26px;
 }
+
+.fact:last-child .fact__description {
+  padding: 0 14px 26px;
+}
+
 
 .fact:not(:last-child)::after {
   @media (max-width: @tablet-width - 1) {
