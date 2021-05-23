@@ -14,7 +14,15 @@
 }
 
 .fact__wrapper {
-  padding: 24px 20px 0;
+  padding: 24px 20px 26px;
+
+  @media (min-width: @tablet-width) {
+    padding: 41px 20px 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 42px 40px 62px;
+  }
 }
 
 .fact__title {
@@ -42,15 +50,31 @@
 .fact__description {
   margin: 0 auto;
   line-height: 21px;
-  padding: 0 0 26px;
 }
 
 .fact:nth-child(2) .fact__description {
-  padding: 0 22px 26px;
+
+  padding: 0 22px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 37px 0 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 24px 0 21px;
+  }
 }
 
 .fact:last-child .fact__description {
-  padding: 0 14px 26px;
+  padding: 0 14px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 28px 0 30px;
+  }
 }
 
 

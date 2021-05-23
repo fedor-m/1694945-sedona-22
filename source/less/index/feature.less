@@ -1,6 +1,6 @@
 .feature {
   position: relative;
-  padding: 0 0 0 51px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -17,11 +17,17 @@
   }
 }
 
+
+.feature__wrapper {
+  padding: 0 20px;
+}
+
 .feature__title {
   font-weight: 700;
   line-height: 26px;
   margin: 0;
   font-size: 18px;
+
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -33,10 +39,11 @@
 .feature__description {
   margin: 0;
   line-height: 21px;
+  padding: 0 0 0 50px;
 }
 
 .feature--accomodation .feature__title {
-  padding: 9px 0 17px 0;
+  padding: 9px 50px 16px;
 
   @media (min-width: @tablet-width) {
     padding: 8px 0 24px 0;
@@ -45,11 +52,11 @@
 
 .feature--accomodation .feature__description {
   @media (min-width: @tablet-width) {
-    padding: 0 36px;
+    padding: 0 34px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 45px 9px;
+    padding: 0 45px 9px 47px;
   }
 }
 
@@ -62,7 +69,7 @@
 
 
 .feature--souvenirs .feature__title {
-  padding: 24px 0 17px 0;
+  padding: 26px 50px 16px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -81,6 +88,10 @@
   @media (min-width: @desktop-width) {
     padding: 25px 32px 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 0 0;
+  }
 }
 
 .feature--souvenirs .feature__description--break {
@@ -89,21 +100,27 @@
   }
 }
 
+.feature--burger {
+  @media (min-width: @desktop-width) {
+    padding: 145px 0 0 0;
+  }
+}
+
 .feature--burger .feature__title {
-  padding: 25px 0 17px 0;
+  padding: 26px 50px 16px;
 
   @media (min-width: @tablet-width) {
-    padding: 8px 0 24px 0;
+    padding: 13px 0 24px 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 2px 0 0;
+    padding: 0;
   }
 }
 
 .feature--burger .feature__description {
   @media (min-width: @tablet-width) {
-    padding: 0 48px;
+    padding: 0 49px;
   }
 }
 
@@ -132,6 +149,10 @@
     top: 60px;
     background-size: 75px 72px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 57px;
+  }
 }
 
 .feature--souvenirs::before {
@@ -143,6 +164,10 @@
     top: 60px;
     background-size: 64px 75px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 57px;
+  }
 }
 
 .feature--burger::before {
@@ -153,5 +178,9 @@
   @media (min-width: @tablet-width) {
     top: 60px;
     background-size: 76px 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 57px;
   }
 }
