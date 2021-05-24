@@ -27,7 +27,7 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 40px;
-    padding: 0 29px;
+    padding: 0 29px 0 25px;
   }
   line-height: 26px;
 }
@@ -56,6 +56,10 @@
 
   .modal__paragraph--basic {
     padding: 0 4px 24px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 4px 38px;
+    }
   }
 
   .modal__paragraph--basic::after {
@@ -78,7 +82,7 @@
   @media (min-width: @tablet-width) {
     width: 400px;
     min-height: 347px;
-    top: 1422px;
+    top: 1413px;
     margin-bottom: 49px;
   }
 
@@ -117,6 +121,12 @@
     }
   }
 
+  .modal__header {
+    @media (min-width: @tablet-width) {
+      padding: 0 9px 0 0;
+    }
+  }
+
   .modal__header::after {
     content: "Ваш отзыв отправлен!";
   }
@@ -129,7 +139,7 @@
     padding-bottom: 40px;
 
     @media (min-width: @tablet-width) {
-      padding-bottom: 58px;
+      padding-bottom: 42px;
     }
 
     @media (min-width: @desktop-width) {
