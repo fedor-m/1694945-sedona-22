@@ -29,6 +29,10 @@
     line-height: 40px;
     padding: 0 29px 0 25px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 27px 2px 24px;
+  }
   line-height: 26px;
 }
 
@@ -125,10 +129,20 @@
     @media (min-width: @tablet-width) {
       padding: 0 9px 0 0;
     }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 9px 1px 0;
+    }
   }
 
   .modal__header::after {
     content: "Ваш отзыв отправлен!";
+  }
+
+  .modal__paragraph {
+    @media (min-width: @desktop-width) {
+      padding: 0 4px 0 0;
+    }
   }
 
   .modal__paragraph--basic::after {
@@ -143,7 +157,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-bottom: 45px;
+      padding: 0 3px 44px 0;
     }
   }
 
