@@ -5,8 +5,15 @@ buttonNav.classList.remove("main-navigation__toggle--no-js");
 buttonNav.addEventListener("click", function () {
   nav.classList.toggle("main-navigation--opened");
 });
+const existMap = document.querySelector(".map") !== null;
 const existForm = document.querySelector(".form") !== null;
 const existPhotos = document.querySelectorAll(".photo__likes-button").length > 0;
+if (existMap) {
+  const picture = document.querySelector(".map__picture");
+  picture.classList.remove("map__picture--no-js");
+  const frame = document.querySelector(".map__frame");
+  frame.classList.remove("map__frame--no-js");
+}
 if (existForm) {
   const form = document.querySelector(".form");
   const modal = document.querySelector(".modal");
