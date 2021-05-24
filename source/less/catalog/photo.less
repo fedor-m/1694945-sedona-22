@@ -18,6 +18,7 @@
   background-color: var(--basic-brown);
   height: 280px;
   width: 100%;
+  display: block;
 
   @media (min-width: @tablet-width) {
     height: 267px;
@@ -63,7 +64,7 @@
   font-weight: 700;
   font-size: 14px;
   margin: 0;
-  padding: 9px 0;
+  padding: 9px 0 1px;
 
   @media (min-width: @tablet-width) {
     padding: 15px 0 0;
@@ -77,14 +78,16 @@
 .photo__author {
   text-transform: initial;
   margin: 0;
+  padding: 0 0 12px;
 }
 
 .photo__likes {
   font-weight: 700;
   display: flex;
+  margin: 0;
+  padding: 0 0 15px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
     position: absolute;
     bottom: 28px;
   }
@@ -131,15 +134,21 @@
 }
 
 .photo:first-child .photo__likes {
-  right: 20px;
+  @media (min-width: @tablet-width) {
+    right: 20px;
+  }
 }
 
 .photo:not(:first-child) .photo__likes {
-  right: 28px;
+  @media (min-width: @tablet-width) {
+    right: 28px;
+  }
 }
 
 .photo:nth-last-child(2) .photo__likes {
-  right: 36px;
+  @media (min-width: @tablet-width) {
+    right: 36px;
+  }
 }
 
 .photo:last-child {
